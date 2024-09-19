@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  backdrop-filter: blur(10px);
+  width: 100%;
+  min-width: 1200px;
+  background-color: green;
+  top: 0;
+}
+.header .container-element {
+  width: 100%;
+}
+.container-element h1 {
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.container-element h1 span {
+  color: yellow;
+  font-size: 17px;
+}
+
+.navigation-content {
+  margin: auto;
+  height: 8vh;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(3, 3, 3, 0.5);
+}
+
+.navigation-content a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  transition: ease 0.5s;
+  color: #fff;
+}
+
+.navigation-content a:hover {
+  color: red;
+  font-size: 18px;
+  border-bottom: 1px solid red;
+}
+
+.main {
+  margin: auto;
+  padding: 1rem;
+  width: 100%;
+  column-gap: 10px;
+  display: grid;
+  border-radius: 10px 10px 0 0;
+  grid-template: 1fr auto/ 1fr auto;
+}
+
+.card {
+  border: 1px solid black;
+  width: 900px;
+  border-radius: 10px 10px 0 0;
+}
+
+.aside-card {
+  width: 250px;
+}
+
+.aside-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.card #about-me,
+#aside-head {
+  color: white;
+  background-color: green;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.about-self {
+  padding: 0.5rem;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+#country {
+  text-align: center;
+  font-size: 30px;
+  color: green;
+  padding: 1rem;
+}
+.about-self img {
+  width: 200px;
+  padding: 0.5rem;
+  height: 150px;
+}
+
+.footer {
+  width: 100%;
+  min-width: 1200px;
+  margin: auto;
+  background-color: green;
+  padding: 1.5rem;
+}
+
+.footer p {
+  text-align: center;
+  color: #fff;
+}
+.footer p:last-child {
+  text-align: center;
+  color: yellow;
+  padding: 0.5rem;
+  font-size: 17px;
+}
