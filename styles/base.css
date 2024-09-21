@@ -102,6 +102,10 @@
   color: steelblue;
   padding: 1rem;
 }
+hr{
+  width: 80%;
+  margin: auto;
+}
 .about-self img {
   width: auto;
   padding: 0.5rem;
@@ -126,6 +130,10 @@
   font-size: 17px;
 }
 
+.footer p {
+  font-size: 20px;
+}
+
 /* Small Devices (Mobile) */
 @media (max-width: 768px) {
   .about-self {
@@ -135,6 +143,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .about-self p {
+    font-size: 12px;
   }
 }
 /* for tablets */
