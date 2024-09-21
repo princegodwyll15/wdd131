@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,12 +8,11 @@
 .header {
   backdrop-filter: blur(10px);
   width: 100%;
-  min-width: 1200px;
-  background-color: green;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: steelblue;
   top: 0;
-}
-.header .container-element {
-  width: 100%;
 }
 .container-element h1 {
   padding: 2rem;
@@ -31,7 +32,7 @@
   padding: 1rem;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(3, 3, 3, 0.5);
+  background-color: rgba(241, 241, 241, 0.8);
 }
 
 .navigation-content a {
@@ -39,7 +40,7 @@
   text-decoration: none;
   font-size: 18px;
   transition: ease 0.5s;
-  color: #fff;
+  color: blue;
 }
 
 .navigation-content a:hover {
@@ -60,16 +61,14 @@
 
 .card {
   border: 1px solid black;
-  width: 900px;
   border-radius: 10px 10px 0 0;
-}
-
-.aside-card {
-  width: 250px;
 }
 
 .aside-content {
   display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   justify-content: center;
   align-items: center;
   padding: 2rem;
@@ -77,7 +76,7 @@
 .card #about-me,
 #aside-head {
   color: white;
-  background-color: green;
+  background-color: steelblue;
   text-align: center;
   padding: 1.5rem;
   border-radius: 10px 10px 0 0;
@@ -85,28 +84,34 @@
 
 .about-self {
   padding: 0.5rem;
-  width: 80%;
+  width: 90%;
   margin: auto;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   display: flex;
+}
+.about-self figcaption {
+  font-size: 12px;
+  color: red;
 }
 
 #country {
   text-align: center;
   font-size: 30px;
-  color: green;
+  color: steelblue;
   padding: 1rem;
 }
 .about-self img {
-  width: 200px;
+  width: auto;
   padding: 0.5rem;
-  height: 150px;
+  height: 100px;
 }
 
 .footer {
   width: 100%;
-  min-width: 1200px;
   margin: auto;
-  background-color: green;
+  background-color: steelblue;
   padding: 1.5rem;
 }
 
@@ -119,4 +124,23 @@
   color: yellow;
   padding: 0.5rem;
   font-size: 17px;
+}
+
+/* Small Devices (Mobile) */
+@media (max-width: 768px) {
+  .about-self {
+    padding: 0.5rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+/* for tablets */
+@media (max-width: 1024px) {
+}
+
+/* for tablets */
+@media (min-width: 1025px) {
 }
