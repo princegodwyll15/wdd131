@@ -15,11 +15,6 @@
   text-align: center;
 }
 
-.container-element h1 span {
-  color: yellow;
-  font-size: 17px;
-}
-
 .navigation-content {
   margin: auto;
   height: 8vh;
