@@ -22,20 +22,20 @@
   padding: 1rem;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(241, 241, 241, 0.8);
+  background-color: rgba(9, 9, 9, 0.8);
 }
 
 .navigation-content a {
   display: inline-block;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   transition: ease 0.5s;
-  color: blue;
+  color: #fff;
+  font-weight: 600;
 }
 
 .navigation-content a:hover {
   color: red;
-  font-size: 18px;
   border-bottom: 1px solid red;
 }
 
