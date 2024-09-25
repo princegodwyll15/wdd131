@@ -6,8 +6,6 @@
 }
 .header {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
   font-style: normal;
   backdrop-filter: blur(10px);
   background-color: steelblue;
