@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
 }
 .header {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
   backdrop-filter: blur(10px);
   background-color: steelblue;
   top: 0;
@@ -28,15 +32,15 @@
 .navigation-content a {
   display: inline-block;
   text-decoration: none;
-  font-size: 20px;
+  font-size: clamp(15px, 18px, 20px);
   transition: ease 0.5s;
   color: #fff;
   font-weight: 600;
 }
 
 .navigation-content a:hover {
-  color: red;
-  border-bottom: 1px solid red;
+  color: blue;
+  border-bottom: 1px solid blue;
 }
 
 .main {
