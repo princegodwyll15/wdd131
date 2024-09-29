@@ -1,15 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 * {
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
 }
 .header {
-  min-width: 500px;
+  min-width: 300px;
   width: 100%;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: darkblue;
+}
+#menu {
+  font-size: 20px;
+  padding: 20px;
+  color: #fff;
+}
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "X";
 }
 
 .header nav {
@@ -20,7 +36,6 @@
   width: 100%;
   color: #fff;
   font-variant: small-caps;
-
   font-weight: 400;
   font-size: 30px;
 }
@@ -34,12 +49,14 @@ nav a:hover {
 }
 
 main {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   border: 1px solid black;
   margin: auto;
-  /* min-width: 500px; */
 }
-main h2{
-    text-align: center;
+main h2 {
+  text-align: center;
 }
 
 .fig-section {
@@ -51,18 +68,21 @@ main h2{
   grid-template-rows: repeat(9, 1fr);
   gap: 20px;
 }
-.fig-section figure{
-    text-align: center;
+.fig-section figure {
+  text-align: center;
 }
 
 .fig-section img {
-  width: 400px;
+  width: auto;
   height: 200px;
 }
 
-footer{
-    background-color: darkblue;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
+footer {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: darkblue;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
 }
