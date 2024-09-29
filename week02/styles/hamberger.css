@@ -70,9 +70,9 @@ nav {
   content: "📍"; /* just a wayfinding symbol for the user */
 }
 
-.activee{
-    background-color: red ;
-    color: blue;
+.activee {
+  background-color: red;
+  color: blue;
 }
 .stuff {
   margin: 0.5m;
@@ -96,7 +96,7 @@ nav {
   }
 
   #menu {
-    display: none; /* hide hamburger button */
+    display: visible; /* view hamburger button */
   }
 
   .navigation {

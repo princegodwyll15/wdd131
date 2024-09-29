@@ -1,83 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@media only screen and (min-width: 1025px) {
+  nav a {
+    display: inline;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+  }
 
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
+  .fig-section {
+    grid-template: auto auto auto/ auto auto auto;
+    gap: 40px;
+  }
+  .fig-section img {
+    width: 300px;
+    height: 160px;
+  }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-.header {
-  width: 100%;
-  color: #fff;
-  min-width: 500px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(35, 35, 77);
-}
-
-.header h1 {
-  margin: 0;
-}
-nav {
-  display: flex;
-}
-nav a {
-  text-decoration: none;
-  font-size: 20px;
-  padding: 20px;
-  color: #fff;
-  transition: ease 0.4s;
-}
-
-nav a:hover {
-  color: rgb(35, 35, 77);
-  background-color: #fff;
-}
-
-main {
-  border: 1px solid black;
-}
-main section {
-  width: 90%;
-  margin: auto;
-  place-items: center;
-  place-content: center;
-  grid-template: auto / auto;
-  grid-gap: 15px;
-  display: grid;
-}
-main h2 {
-  text-align: center;
-  grid-column: 1/4;
-}
-
-main img {
-  border-radius: 2px;
-  width: 100%;
-  height: 300px;
-}
-
-main figure {
-  margin: 10px;
-  color: rgb(35, 35, 77);
-}
-
-main figcaption {
-  text-align: center;
-}
-
-footer {
-  background-color: rgb(35, 35, 77);
-  padding: 20px;
-  text-align: center;
-  color: #fff;
+  .fig-section figure {
+    margin: 1rem 0;
+  }
 }
