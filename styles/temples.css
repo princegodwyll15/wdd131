@@ -4,22 +4,66 @@
   padding: 0%;
   box-sizing: border-box;
 }
-.header {
-  min-width: 300px;
-  width: 100%;
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: "Fredoka", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+}
+
+/* Header styles */
+.header {
+  position: relative;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: darkblue;
 }
-#menu {
-  font-size: 20px;
-  padding: 20px;
+
+.header h1 {
+  padding: 20px 20px 20px 2px;
+  color: #fff;
+  font-size: 30px;
+  font-variant: small-caps;
+  font-weight: 400;
+}
+
+/* Navigation styles */
+.navigation {
+  display: flex;
+  flex-direction: column;
+  background-color: darkblue;
   color: #fff;
 }
+
+.navigation a {
+  padding: 1rem;
+  border-top: 1px solid darkblue;
+  color: #fff;
+  text-decoration: none;
+  display: none;
+}
+
+.navigation a:hover {
+  background-color: white;
+  color: darkblue;
+}
+
+/* Menu styles */
+#menu {
+  font-size: 40px;
+  padding: 10px;
+  color: #fff;
+  position: relative;
+}
+
 #menu::before {
   content: "☰";
 }
@@ -28,53 +72,46 @@
   content: "X";
 }
 
-.header nav {
-  display: flex;
-}
-.header h1 {
-  padding: 20px 20px 20px 2px;
-  width: 100%;
-  color: #fff;
-  font-variant: small-caps;
-  font-weight: 400;
-  font-size: 30px;
-}
-nav a {
-  display: none;
+.open a {
+  display: block;
 }
 
-nav a:hover {
-  background-color: #fff;
-  color: darkblue;
-}
-
+/* Main content styles */
 main {
-  font-family: "Fredoka", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
   border: 1px solid black;
   margin: auto;
 }
+
 main h2 {
+  margin-top: 0.5rem;
   text-align: center;
 }
 
+/* Figure section styles */
 .fig-section {
   display: grid;
   justify-content: center;
   align-items: center;
-  align-self: center;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(9, 1fr);
   gap: 20px;
 }
+
 .fig-section figure {
   text-align: center;
 }
 
 .fig-section img {
   width: auto;
-  height: 300px;
+  height: 230px;
+}
+
+/* Footer styles */
+footer {
+  background-color: darkblue;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
 }
 
 footer {
