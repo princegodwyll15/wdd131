@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 
-:root{
-  --background-color:darkblue;
-  --text-color:#fff;
-  --hover-backgorund:#fff;
-  --hover-color:darkblue;
+:root {
+  --background-color: darkblue;
+  --text-color: #fff;
+  --hover-backgorund: #fff;
+  --hover-color: darkblue;
   --body-font-style: "Fredoka", sans-serif;
 }
 
@@ -12,13 +12,6 @@
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
-}
-
-/* Global styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -53,6 +46,7 @@ body {
 }
 
 .navigation a {
+  transition: ease 0.5s;
   padding: 1rem;
   border-top: 1px solid darkblue;
   color: var(--text-color);
