@@ -26,7 +26,6 @@ body {
   grid-template-rows: auto auto;
 }
 .header h1 {
-  margin: 0% .5rem;
   font-size: 40px;
   color: var(--text-color);
   font-variant: small-caps;
