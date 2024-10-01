@@ -17,13 +17,13 @@ body {
   font-weight: var(--body-font);
 }
 /* Header styles */
-.header{
+.header {
   background-color: var(--background-color);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto;
 }
-.header h1{
+.header h1 {
   color: var(--text-color);
   font-variant: small-caps;
   font-family: var(--header-font);
@@ -40,6 +40,7 @@ body {
 }
 
 .navigation a {
+  font-family: var(--header-font);
   transition: ease 0.5s;
   padding: 1rem;
   text-align: center;
