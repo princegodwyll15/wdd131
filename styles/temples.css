@@ -4,7 +4,7 @@
   --hover-backgorund: #fff;
   --hover-color: darkblue;
   --header-font: "Open Sans", sans-serif;
-  --body-font: "Roboto", sans-serif;;
+  --body-font: "Roboto", sans-serif;
 }
 * {
   margin: 0;
@@ -16,7 +16,7 @@ body {
 }
 /* Header styles */
 .header {
-  padding: .5rem;
+  padding: 0.5rem;
   background-color: var(--background-color);
   display: grid;
   justify-content: space-between;
@@ -24,10 +24,11 @@ body {
   grid-template-rows: auto auto;
 }
 .header h1 {
-  font-size: 40px;
-  color: var(--text-color);
-  font-variant: small-caps;
   font-family: var(--header-font);
+  letter-spacing: 5px;
+  color: var(--text-color);
+  font-size: 50px;
+  font-variant: small-caps;
   grid-column: 1/2;
 }
 /* Navigation styles */
@@ -59,7 +60,7 @@ body {
   outline: none;
   border: none;
   background-color: var(--background-color);
-  font-size: 40px;
+  font-size: 50px;
   color: var(--text-color);
 }
 
@@ -72,6 +73,7 @@ body {
 }
 
 .open a {
+  transition: ease 1s;
   display: block;
 }
 
