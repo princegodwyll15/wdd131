@@ -9,16 +9,42 @@
 }
 
 @media only screen and (min-width: 1075px) {
+  .header {
+    width: 100%;
+    font-family: var(--header-font);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+  }
+
+  .header h1 {
+    margin: 0%;
+    padding: 0px 20px 00px 2px;
+    color: var(--text-color);
+    font-size: 40px;
+    font-variant: small-caps;
+    font-weight: 400;
+  }
+
+  /* Navigation styles */
   .navigation {
     display: flex;
     flex-direction: row;
-  }
-  .navigation a {
-    padding: 20px;
-    display: inline;
-    text-decoration: none;
+    background-color: darkblue;
     color: var(--text-color);
   }
+
+  .navigation a {
+    transition: ease 0.5s;
+    padding: 1rem;
+    border-top: 1px solid darkblue;
+    color: var(--text-color);
+    text-decoration: none;
+    display: inline;
+  }
+
   .navigation a:hover {
     background-color: var(--hover-backgorund);
     color: var(--hover-color);
