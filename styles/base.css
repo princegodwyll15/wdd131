@@ -5,10 +5,11 @@
   padding: 0;
 }
 .header {
+  font-weight: 100;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  backdrop-filter: blur(10px);
-  background-color: steelblue;
+  backdrop-filter: blur(2px);
+  background-color: darkblue;
   top: 0;
 }
 .container-element h1 {
@@ -29,7 +30,7 @@
   padding: 1rem;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(9, 9, 9, 0.8);
+  background-color: rgba(255, 255, 255, 0.856);
 }
 
 .navigation-content a {
@@ -37,13 +38,12 @@
   text-decoration: none;
   font-size: clamp(15px, 18px, 20px);
   transition: ease 0.5s;
-  color: #fff;
-  font-weight: 600;
+  color: darkblue;
+  font-weight: 400;
 }
 
 .navigation-content a:hover {
-  color: blue;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid darkblue;
 }
 
 .main {
@@ -70,7 +70,7 @@
 .card #about-me,
 #aside-head {
   color: white;
-  background-color: steelblue;
+  background-color: darkblue;
   text-align: center;
   padding: 1.5rem;
   border-radius: 10px 10px 0 0;
@@ -85,13 +85,13 @@
 .about-self figcaption {
   font-size: 13px;
   text-align: center;
-  color: steelblue;
+  color: darkblue;
 }
 
 #country {
   text-align: center;
   font-size: 30px;
-  color: steelblue;
+  color: darkblue;
   padding: 1rem;
 }
 hr {
@@ -107,7 +107,7 @@ hr {
 .footer {
   width: 100%;
   margin: auto;
-  background-color: steelblue;
+  background-color: darkblue;
   padding: 1.5rem;
 }
 
