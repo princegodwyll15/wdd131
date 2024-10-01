@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
-
 :root {
   --background-color: darkblue;
   --text-color: #fff;
   --hover-backgorund: #fff;
   --hover-color: darkblue;
-  --body-font-style: "Fredoka", sans-serif;
+  --header-font: "Open Sans", sans-serif;
+  --body-font: "Roboto", sans-serif;
 }
 
 @media only screen and (min-width: 1075px) {
@@ -20,12 +19,11 @@
   }
 
   .header h1 {
-    margin: 0%;
-    padding: 0px 20px 00px 2px;
+    font-family: var(--header-font);
+    letter-spacing: 5px;
     color: var(--text-color);
-    font-size: 40px;
+    font-size: 50px;
     font-variant: small-caps;
-    font-weight: 400;
   }
 
   /* Navigation styles */
