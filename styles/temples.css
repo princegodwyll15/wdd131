@@ -80,7 +80,7 @@ body {
 
 /* Main content styles */
 main {
-  font-weight: var(--body-font);
+  font-family: var(--body-font);
   border: 1px solid black;
   margin: auto;
 }
