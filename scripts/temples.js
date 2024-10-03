@@ -1,6 +1,8 @@
 // last modification date
 const currentYear = new Date().getFullYear();
-document.getElementById("year").innerText = currentYear;
+const footerMsg = document.querySelector("#year");
+
+footerMsg.textContent = `${currentYear} Prince Godwyll Accra Ghana`;
 ModifiedElement = document.getElementById("lastModification");
 const getLastModified = new Date(document.lastModified);
 actDate = getLastModified.toLocaleString();
