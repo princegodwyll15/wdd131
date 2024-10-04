@@ -1,14 +1,16 @@
 :root {
-  --primary-color: red;
-  --secondary-color: blue;
+  --secondary-color:red;
+  --primary-color: blue;
   --tertiary-color: #ffeeff;
   --header-font: "Open Sans", sans-serif;
   --body-font: "Roboto Condensed", sans-serif;
 }
 @media (min-width: 1025px) {
-  header h1 {
-    width: 100%;
+  header{
     font-size: 50px;
+  }
+  header h1 {
+    background-color: var(--primary-color);
     color: var(--tertiary-color);
   }
 
@@ -24,7 +26,7 @@
     left: 40px;
   }
   .hero{
-    height: 70vh;
+    height: 90vh;
   }
 
   .weather {
