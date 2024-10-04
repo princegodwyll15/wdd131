@@ -1,0 +1,79 @@
+:root {
+  --primary-color: red;
+  --secondary-color: blue;
+  --tertiary-color: #fff;
+  --header-font: "Open Sans", sans-serif;
+  --body-font:"Roboto Condensed", sans-serif;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  text-align: center;
+  font-family: var(--header-font);
+  padding: 0.5rem;
+  width: 100%;
+  margin: auto;
+}
+
+header span {
+  color: var(--secondary-color);
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+main .hero {
+  background-color: var(--secondary-color);
+  padding-top: 20px;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .data {
+  background-color: var(--tertiary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  height: auto;
+  width: 100%;
+}
+
+.data h2{
+  font-family: var(--header-font);
+  padding: 1rem;
+  text-align: center;
+}
+.data p{
+  font-family: var(--body-font);
+  text-align: center;
+  padding: 0 1rem;
+  margin: 1rem;
+}
+
+main .weather {
+  margin-top: .5rem;
+  background-color: var(--tertiary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  height: auto;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+}
