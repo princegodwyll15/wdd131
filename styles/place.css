@@ -3,7 +3,7 @@
   --secondary-color: blue;
   --tertiary-color: #fff;
   --header-font: "Open Sans", sans-serif;
-  --body-font:"Roboto Condensed", sans-serif;
+  --body-font: "Roboto Condensed", sans-serif;
 }
 
 * {
@@ -21,59 +21,64 @@ header {
   width: 100%;
   margin: auto;
 }
-
-header span {
-  color: var(--secondary-color);
+header h1{
+  font-size: 17px;
 }
 
 main {
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 }
-
-main .hero {
-  background-color: var(--secondary-color);
+.hero{
+  background-color: var(--tertiary-color);
   padding-top: 20px;
 }
-
 .hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-main .data {
-  background-color: var(--tertiary-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  height: auto;
-  width: 100%;
-}
-
-.data h2{
-  font-family: var(--header-font);
-  padding: 1rem;
+.data,
+.weather h2 {
   text-align: center;
 }
-.data p{
+
+.data,
+.weather {
+  margin-bottom: 1rem;
+  margin: auto;
+}
+
+.data p,
+.weather p {
+  width: 100%;
   font-family: var(--body-font);
-  text-align: center;
-  padding: 0 1rem;
-  margin: 1rem;
+  text-align: justify; /* Justify the paragraph text */
+  margin: 0.5rem;
 }
 
-main .weather {
-  margin-top: .5rem;
-  background-color: var(--tertiary-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  height: auto;
-  width: 100%;
+.weather img {
+  width: 200px;
+  height: 100px;
 }
 
 footer {
   width: 100%;
+  text-align: center;
   padding: 20px;
+  font-family: var(--header-font);
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
+}
+footer p{
+  margin: .5rem;
+}
+
+footer #year::before {
+  content: "©";
+  font-size: 20px;
 }
