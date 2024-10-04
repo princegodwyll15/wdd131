@@ -1,17 +1,6 @@
-:root {
-  --secondary-color:red;
-  --primary-color: blue;
-  --tertiary-color: #ffeeff;
-  --header-font: "Open Sans", sans-serif;
-  --body-font: "Roboto Condensed", sans-serif;
-}
 @media (min-width: 1025px) {
-  header{
-    font-size: 50px;
-  }
-  header h1 {
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
+  header {
+    font-size: 40px;
   }
 
   main {
@@ -25,7 +14,7 @@
     top: 20px;
     left: 40px;
   }
-  .hero{
+  .hero {
     height: 90vh;
   }
 
@@ -41,7 +30,7 @@
     margin: 10px 70px 0px -30px;
     opacity: 1;
     color: var(--tertiary-color);
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     left: 0;
     padding: 1rem;
   }
@@ -53,7 +42,7 @@
     margin-top: 10px;
     opacity: 1;
     color: var(--tertiary-color);
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 1rem;
   }
   .weather h2::after {
