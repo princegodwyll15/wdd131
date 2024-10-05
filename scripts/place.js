@@ -9,9 +9,9 @@ const lasModification = document.querySelector("#LastModification");
 year.textContent = `${currentYear} Prince Godwyll Accra Ghana.`;
 lasModification.textContent = getLastModified;
 
-const tempCelcius = 2;
+const tempCelcius = 20;
 const tempFarend = 68;
-const windSpeed = 6;
+const windSpeed = 5;
 const windSpeedMph = 3.11;
 const getwindChill = document.getElementById("windChill");
 
@@ -38,7 +38,7 @@ const calculateWindChill = () => {
   } 
   
   else {
-    getwindChill.textContent = "Windchill " + "N/A";
+    getwindChill.textContent = "Windchill: " + "N/A";
   }
 };
 
