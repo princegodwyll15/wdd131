@@ -1,12 +1,17 @@
 :root {
+  --primary-color: #000;
   --secondary-color: darkblue;
   --tertiary-color: #fff;
-  --header-font: "Open Sans", sans-serif;
-  --body-font: "Montserrat", sans-serif;
+  --other-color: red;
+  --body-font: "Roboto Mono", monospace;
 }
 @media only screen and (min-width: 768px) {
   header {
     font-size: 30px;
+  }
+
+  body {
+    font-family: var(--body-font);
   }
 
   main {
@@ -15,8 +20,9 @@
   .data {
     position: absolute;
     opacity: 0.9;
+    font-size: 90%;
     background-color: var(--tertiary-color);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     top: 30px;
     left: 40px;
   }
@@ -26,17 +32,17 @@
 
   .weather {
     opacity: 0.9;
+    font-size: 90%;
     background-color: var(--tertiary-color);
     position: absolute;
     bottom: 20px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     right: 40px;
   }
   .data h2 {
-    font-family: var(--header-font);
     margin: 10px 70px 0px -30px;
-    color: var(--tertiary-color);
-    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    background-color: var(--other-color);
     left: 0;
     padding: 1rem;
   }
@@ -46,9 +52,8 @@
   .weather h2 {
     margin: 10px 70px 0px -30px;
     margin-top: 10px;
-    font-family: var(--header-font);
-    color: var(--tertiary-color);
-    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    background-color: var(--other-color);
     padding: 1rem;
   }
   .weather h2::after {
