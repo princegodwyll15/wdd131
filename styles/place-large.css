@@ -8,10 +8,10 @@
   }
   .data {
     position: absolute;
-    opacity: 0.8;
+    opacity: 0.9;
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
-    top: 20px;
+    top: 30px;
     left: 40px;
   }
   .hero {
@@ -19,6 +19,7 @@
   }
 
   .weather {
+    opacity: 0.9;
     background-color: var(--tertiary-color);
     position: absolute;
     bottom: 20px;
