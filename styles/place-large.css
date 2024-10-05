@@ -20,7 +20,7 @@
   .data {
     position: absolute;
     opacity: 0.9;
-    font-size: 90%;
+    margin-bottom: 10%;
     background-color: var(--tertiary-color);
     color: var(--primary-color);
     top: 30px;
@@ -32,7 +32,6 @@
 
   .weather {
     opacity: 0.9;
-    font-size: 90%;
     background-color: var(--tertiary-color);
     position: absolute;
     bottom: 20px;
