@@ -1,4 +1,4 @@
-@media (min-width: 1025px) {
+@media only screen and (min-width: 768px) {
   header {
     font-size: 40px;
   }
@@ -19,7 +19,6 @@
   }
 
   .weather {
-    opacity: 0.8;
     background-color: var(--tertiary-color);
     position: absolute;
     bottom: 20px;
@@ -27,8 +26,8 @@
     right: 40px;
   }
   .data h2 {
+    font-family: var(--header-font);
     margin: 10px 70px 0px -30px;
-    opacity: 1;
     color: var(--tertiary-color);
     background-color: var(--secondary-color);
     left: 0;
@@ -40,7 +39,7 @@
   .weather h2 {
     margin: 10px 70px 0px -30px;
     margin-top: 10px;
-    opacity: 1;
+    font-family: var(--header-font);
     color: var(--tertiary-color);
     background-color: var(--secondary-color);
     padding: 1rem;

@@ -32,7 +32,7 @@ main {
   align-self: center;
 }
 .hero {
-  background-color: var(--primary-color);
+  background-color: var(--tertiary-color);
   padding-top: 20px;
 }
 .hero img {
