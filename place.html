@@ -20,12 +20,16 @@
     <main>
       <section class="hero">
         <picture>
-          <source srcset="images/place-large.webp" media="min-width:768px">
-          <source srcset="images/place-medium.webp" media="min-width:500px">
-          <img src="images/place-small.webp" width="400" height="200" alt="countrys image">
+          <!-- Serve a different image for wide screens -->
+          <source media="(min-width: 1200px)" srcset="images/place-large.webp">       
+          <!-- Serve a different image for tablet screens -->
+          <source media="(min-width: 768px)" srcset="images/place-medium.webp">         
+          <!-- Image for small devices -->
+          <img src="images/place-small.webp" alt="Descriptive alt text for the image">
         </picture>
       </section>
 
+      <!-- data container -->
       <section class="data">
         <h2>Data</h2>
         <p><strong>Area: </strong>9.834 Million Km <sup>2</sup></p>
@@ -42,6 +46,7 @@
       </section>
       <hr>
 
+      <!-- weather container -->
       <section class="weather">
         <h2>Weather</h2>
         <img src="images/weather.svg" alt="weather icon">
@@ -52,6 +57,7 @@
       </section>
     </main>
 
+    <!-- footer of the palce website -->
     <footer>
       <p id="year"></p>
       <p id="LastModification"></p>
