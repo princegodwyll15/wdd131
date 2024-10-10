@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: darkblue;
+    font-size: 25px;
+    width: 90%;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+}
+
+main{
+   margin-top: 20px;
+}
+
+img{
+    animation: scroll linear both;
+    animation-timeline: view();
+    animation-range: 10% cover 20%;
+    margin:1rem auto;
+    display: block;
+    width: 400px;
+    height: 600px;
+}
+
+footer{
+    width: 90%;
+    background-color: darkblue;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+
+}
+
+#year::before{
+    content: "©";
+}
+
+@keyframes scroll {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
