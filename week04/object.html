@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in JavaScript</title>
+</head>
+<body>
+    <script>
+        let person = {
+  name: "Antonia Francesca",
+  age: 30,
+  profession: "Software Engineer",
+  hobbies: ["reading", "playing guitar", "hiking"],
+  address: {
+    street: "123 Camino Real",
+    city: "Santa Rosa",
+    country: "Honduras"
+  },
+  isEmployed: true,
+  greet: function() {
+    console.log(`Hello, my name is ${this.name}.`);
+  }
+};
+
+person.name = "prince";
+
+// console.log(person.greet);
+// console.log(person.age);
+// document.write(person.hobbies[1]);
+// document.write(person.isEmployed);
+// console.log(person.name);
+
+console.log(person.address.street);
+    </script>
+</body>
+</html>

@@ -42,11 +42,23 @@ footer{
 }
 
 @keyframes scroll {
-    from{
+    0%{
         opacity: 0;
     }
-    to{
+    25%{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0,5;
+    }
+    76%{
+        opacity: 0.7;
+    }
+
+    100%{
         opacity: 1;
     }
+
+
     
 }
