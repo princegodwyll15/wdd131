@@ -95,6 +95,7 @@ temples.forEach((templeData) => {
   createImg.style.height = "auto";
   createImg.src = templeData.imageUrl;
   createImg.alt = templeData.templeName;
+  createImg.loading= "lazy";
 
   wrapper.appendChild(temName);
   wrapper.appendChild(othertemData);
