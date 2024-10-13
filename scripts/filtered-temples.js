@@ -113,6 +113,41 @@ temples.forEach((templeData) => {
 });
 document.body.appendChild(container);
 
+// Create footer element
+const footerContent = () => {
+  const currentYear = new Date().getFullYear();
+  const footerElement = document.createElement("footer");
+  footerElement.classList.add("footer");
+
+  const footerParagraph = document.createElement("p");
+  footerParagraph.classList.add("footer-p");
+
+  const getLastModified = new Date(document.lastModified);
+  const actDate = getLastModified.toLocaleString();
+
+  footerParagraph.innerHTML = `Last Modified: ${actDate} <br>
+   ${currentYear} Prince Godwyll Accra Ghana`;
+  footerElement.appendChild(footerParagraph);
+
+  // Append footer to the body
+  document.body.appendChild(footerElement);
+};
+
+// Call footerContent on page load
+document.addEventListener("DOMContentLoaded", footerContent);
+
+//hamburger on small screens
+const getNavigation = document.querySelector(".navigation");
+const openMenu = document.querySelector("#menu");
+
+openMenu.addEventListener("click", () => {
+  getNavigation.classList.toggle("open");
+  openMenu.classList.toggle("open");
+});
+
+
+
+
 //filter elements for links
 const oldTemples = temples.filter((templeData) => {
   const dedicatedYear = new Date(templeData.dedicated).getFullYear();
@@ -154,34 +189,4 @@ oldTemples.forEach((templeData) => {
 
 document.body.appendChild(filteredContainer);
 
-// Create footer element
-const footerContent = () => {
-  const currentYear = new Date().getFullYear();
-  const footerElement = document.createElement("footer");
-  footerElement.classList.add("footer");
 
-  const footerParagraph = document.createElement("p");
-  footerParagraph.classList.add("footer-p");
-
-  const getLastModified = new Date(document.lastModified);
-  const actDate = getLastModified.toLocaleString();
-
-  footerParagraph.innerHTML = `Last Modified: ${actDate} <br>
-   ${currentYear} Prince Godwyll Accra Ghana`;
-  footerElement.appendChild(footerParagraph);
-
-  // Append footer to the body
-  document.body.appendChild(footerElement);
-};
-
-// Call footerContent on page load
-document.addEventListener("DOMContentLoaded", footerContent);
-
-//hamburger on small screens
-const getNavigation = document.querySelector(".navigation");
-const openMenu = document.querySelector("#menu");
-
-openMenu.addEventListener("click", () => {
-  getNavigation.classList.toggle("open");
-  openMenu.classList.toggle("open");
-});
