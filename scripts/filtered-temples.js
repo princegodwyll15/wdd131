@@ -100,10 +100,10 @@ temples.forEach((templeData) => {
 
   //create an img element to append temple images to it
   const createImg = document.createElement("img");
-  createImg.classList.add('img');
+  createImg.classList.add("img");
   createImg.src = templeData.imageUrl;
   createImg.alt = templeData.templeName;
-  createImg.loading= "lazy";
+  createImg.loading = "lazy";
 
   wrapper.appendChild(temName);
   wrapper.appendChild(othertemData);
@@ -113,34 +113,16 @@ temples.forEach((templeData) => {
 });
 document.body.appendChild(container);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //filter elements for links
-const oldTemples =temples.filter((templeData) =>{
-const dedicatedYear = new Date(templeData.dedicated).getFullYear();
-return dedicatedYear < 1900;
+const oldTemples = temples.filter((templeData) => {
+  const dedicatedYear = new Date(templeData.dedicated).getFullYear();
+  return dedicatedYear < 1900;
 });
 
-oldTemples.forEach((templeData) =>{
+oldTemples.forEach((templeData) => {
   //create a container for filtered temple data
-  const filteredContainer = document.createElement('div');
-  filteredContainer.classList.add('filteredContainer');
-
+  const filteredContainer = document.createElement("div");
+  filteredContainer.classList.add("filteredContainer");
 
   //wrapper to contain all img cards of temples
   const wrapper = document.createElement("div");
@@ -159,67 +141,32 @@ oldTemples.forEach((templeData) =>{
 
   //create an img element to append temple images to it
   const createImg = document.createElement("img");
-  createImg.classList.add('img');
+  createImg.classList.add("img");
   createImg.src = templeData.imageUrl;
   createImg.alt = templeData.templeName;
-  createImg.loading= "lazy";
+  createImg.loading = "lazy";
 
   wrapper.appendChild(temName);
   wrapper.appendChild(othertemData);
   wrapper.appendChild(createImg);
   filteredContainer.appendChild(wrapper);
-})
+});
 
 document.body.appendChild(filteredContainer);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Create footer element
 const footerContent = () => {
   const currentYear = new Date().getFullYear();
-  const footerElement = document.createElement('footer');
-  footerElement.classList.add('footer');
+  const footerElement = document.createElement("footer");
+  footerElement.classList.add("footer");
 
-  const footerParagraph = document.createElement('p');
-  footerParagraph.classList.add('footer-p');
+  const footerParagraph = document.createElement("p");
+  footerParagraph.classList.add("footer-p");
 
   const getLastModified = new Date(document.lastModified);
   const actDate = getLastModified.toLocaleString();
 
-   footerParagraph.innerHTML = `Last Modified: ${actDate} <br>
+  footerParagraph.innerHTML = `Last Modified: ${actDate} <br>
    ${currentYear} Prince Godwyll Accra Ghana`;
   footerElement.appendChild(footerParagraph);
 
@@ -228,8 +175,7 @@ const footerContent = () => {
 };
 
 // Call footerContent on page load
-document.addEventListener('DOMContentLoaded', footerContent);                
-
+document.addEventListener("DOMContentLoaded", footerContent);
 
 //hamburger on small screens
 const getNavigation = document.querySelector(".navigation");
@@ -239,29 +185,3 @@ openMenu.addEventListener("click", () => {
   getNavigation.classList.toggle("open");
   openMenu.classList.toggle("open");
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
