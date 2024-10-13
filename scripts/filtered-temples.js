@@ -77,7 +77,7 @@ const temples = [
 ];
 
 //create a container for the elements to be created
-const container = document.createElement("div");
+const container = document.createElement("main");
 container.classList.add("container");
 
 // Iterate through temple data
@@ -101,6 +101,7 @@ temples.forEach((templeData) => {
   //create an img element to append temple images to it
   const createImg = document.createElement("img");
   createImg.classList.add('img');
+  createImg.style.height = '300px';
   createImg.src = templeData.imageUrl;
   createImg.alt = templeData.templeName;
   createImg.loading= "lazy";
@@ -111,7 +112,10 @@ temples.forEach((templeData) => {
 
   container.appendChild(wrapper);
 });
-document.body.appendChild(container);
+// Append container to main element
+const main = document.querySelector("main");
+main.appendChild(container);
+
 
 
 // last modification date
