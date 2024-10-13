@@ -59,7 +59,7 @@ const temples = [
   {
     templeName: "Accra Ghana Temple",
     location: "Accra, Ghana",
-    dedicated: "  11 January 2004",
+    dedicated: "2004, Janaury, 11",
     area: 17500,
     imageUrl:
       "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-13760-main.jpg",
@@ -67,7 +67,7 @@ const temples = [
   {
     templeName: "Detroit Michigan Temple",
     location: "Eastern Michigan, USA",
-    dedicated: "   10 October 1998",
+    dedicated: " 1998, October, 10",
     area: 10700,
     imageUrl:
       "https://churchofjesuschristtemples.org/assets/img/temples/detroit-michigan-temple/detroit-michigan-temple-45743-main.jpg",
