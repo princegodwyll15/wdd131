@@ -155,7 +155,7 @@ function updateContainer(filterType) {
   const filteredTemples = filterTemples(filterType);
   filteredTemples.forEach((templeData) => {
     const templeHead = document.querySelector('#templeHead');
-    templeHead.textContent = `Temple ${filterType}`;
+    templeHead.textContent = `temple  ${filterType}`;
     
     container.appendChild(createTempleElement(templeData));
   });
