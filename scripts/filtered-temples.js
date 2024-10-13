@@ -57,13 +57,22 @@ const temples = [
   },
 
   {
-    templeName: "Mexico City Mexico",
-    location: "Mexico City, Mexico",
-    dedicated: "1983, December, 2",
-    area: 116642,
+    templeName: "Accra Ghana Temple",
+    location: "Accra, Ghana",
+    dedicated: "  11 January 2004",
+    area: 17500,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg",
+      "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-13760-main.jpg",
   },
+  {
+    templeName: "Detroit Michigan Temple",
+    location: "Eastern Michigan, USA",
+    dedicated: "   10 October 1998",
+    area: 10700,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/detroit-michigan-temple/detroit-michigan-temple-45743-main.jpg",
+  },
+
   // Add more temple objects here...
 ];
 
@@ -91,8 +100,7 @@ temples.forEach((templeData) => {
 
   //create an img element to append temple images to it
   const createImg = document.createElement("img");
-  createImg.style.width = "auto";
-  createImg.style.height = "auto";
+  createImg.classList.add('img');
   createImg.src = templeData.imageUrl;
   createImg.alt = templeData.templeName;
   createImg.loading= "lazy";
@@ -119,7 +127,7 @@ const footerContent = () => {
   const getLastModified = new Date(document.lastModified);
   const actDate = getLastModified.toLocaleString();
 
-   footerParagraph.textContent = `Last Modified: ${actDate}
+   footerParagraph.innerHTML = `Last Modified: ${actDate} <br>
    ${currentYear} Prince Godwyll Accra Ghana`;
   footerElement.appendChild(footerParagraph);
 
@@ -139,3 +147,29 @@ openMenu.addEventListener("click", () => {
   getNavigation.classList.toggle("open");
   openMenu.classList.toggle("open");
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

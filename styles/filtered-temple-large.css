@@ -50,28 +50,37 @@
   #menu {
     display: none;
   }
-  .container{
-    background-color: transparent;
+  /*temple card container*/
+  .container {
     display: grid;
-    padding: 3rem;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto auto auto;
-    justify-content: space-between;
-    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
   
-  }
-  .templeName{
-    font-size: 20px;
-  }
-  .wrapper{
-    padding: .5rem;
+  .wrapper {
+    width: auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 4px 4px 20px rgb(230, 230, 235);
-    margin: 2rem;
   }
   
-  .tempdata:nth-child(3){
-    margin-bottom: 20px;
+  .templeName {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .tempdata {
+    font-size: 15px;
+    color: #666;
+  }
+  
+  .img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
   }
   
 }
-
