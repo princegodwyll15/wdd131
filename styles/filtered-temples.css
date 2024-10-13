@@ -96,6 +96,10 @@ body {
   grid-template-rows: repeat(8, auto);
   margin: 0 auto;
 }
+.filteredContainer {
+  display: none; /* Hide initially */
+  margin-top: 20px;
+}
 .wrapper img{
   height: auto;
   width: 100%;

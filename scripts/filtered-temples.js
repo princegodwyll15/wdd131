@@ -2,10 +2,12 @@
 const container = document.createElement("div");
 container.classList.add("container");
 
-//hamburger on small screens
+//hamburger on small screens get all elements needed to do so
 const getNavigation = document.querySelector(".navigation");
 const openMenu = document.querySelector("#menu");
 
+//get links for navigatio in the header
+const oldLink = document.getElementById("old");
 
 const temples = [
   {
@@ -155,10 +157,12 @@ const oldTemples = temples.filter((templeData) => {
   return dedicatedYear < 1900;
 });
 
+
+const filteredContainer = document.createElement("div");
+filteredContainer.classList.add("filteredContainer");
+filteredContainer.style.display = 'none'; // Hide initially
+
 oldTemples.forEach((templeData) => {
-  //create a container for filtered temple data
-  const filteredContainer = document.createElement("div");
-  filteredContainer.classList.add("filteredContainer");
 
   //wrapper to contain all img cards of temples
   const wrapper = document.createElement("div");
@@ -188,5 +192,10 @@ oldTemples.forEach((templeData) => {
   filteredContainer.appendChild(wrapper);
 });
 document.body.appendChild(filteredContainer);
+
+oldLink.addEventListener('click', ()=>{
+  container.style.display='none';
+  filteredContainer.style.display='inline';
+})
 
 
