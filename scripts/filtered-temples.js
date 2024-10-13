@@ -154,6 +154,9 @@ function updateContainer(filterType) {
   container.innerHTML = "";
   const filteredTemples = filterTemples(filterType);
   filteredTemples.forEach((templeData) => {
+    const templeHead = document.querySelector('#templeHead');
+    templeHead.textContent = `Temple ${filterType}`;
+    
     container.appendChild(createTempleElement(templeData));
   });
 }

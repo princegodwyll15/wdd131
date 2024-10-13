@@ -81,8 +81,10 @@ header h1 {
   transition: ease 1s;
   display: block;
 }
-h2{
+#templeHead{
+  font-variant: small-caps;
   text-align: center;
+  font-size: 25px;
   margin: .5rem;
   font-family: var(--header-font);
 }
