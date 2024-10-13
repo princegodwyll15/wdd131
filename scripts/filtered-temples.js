@@ -72,51 +72,96 @@ const temples = [
     imageUrl:
       "https://churchofjesuschristtemples.org/assets/img/temples/detroit-michigan-temple/detroit-michigan-temple-45743-main.jpg",
   },
-
-  // Add more temple objects here...
 ];
 
-//create a container for the elements to be created
-const container = document.createElement("main");
+// Create container
+const container = document.createElement("div");
 container.classList.add("container");
 
-// Iterate through temple data
-temples.forEach((templeData) => {
-  //create a wrappeer the temple elements
+// Function to create temple elements
+function createTempleElement(templeData) {
   const wrapper = document.createElement("div");
   wrapper.classList.add("wrapper");
 
-  //create elements for templeName key in the array object data
-  const temName = document.createElement("h2");
-  temName.classList.add("templeName");
-  temName.textContent = templeData.templeName;
+  const templeName = document.createElement("h2");
+  templeName.classList.add("templeName");
+  templeName.textContent = templeData.templeName;
 
-  //create elements for other temples key in the array object data
-  const othertemData = document.createElement("p");
-  othertemData.classList.add("tempdata");
-  othertemData.innerHTML = `Temple Location: ${templeData.location} <br>
-                            Dedication:${templeData.dedicated} <br>
-                            Land Size: ${templeData.area}`;
+  const templeDetails = document.createElement("p");
+  templeDetails.classList.add("tempdata");
+  templeDetails.innerHTML = `
+    Temple Location: ${templeData.location} <br>
+    Dedication: ${templeData.dedicated} <br>
+    Land Size: ${templeData.area}
+  `;
 
-  //create an img element to append temple images to it
-  const createImg = document.createElement("img");
-  createImg.classList.add('img');
-  createImg.style.height = '300px';
-  createImg.src = templeData.imageUrl;
-  createImg.alt = templeData.templeName;
-  createImg.loading= "lazy";
+  const templeImage = document.createElement("img");
+  templeImage.classList.add("img");
+  templeImage.style.height = "300px";
+  templeImage.src = templeData.imageUrl;
+  templeImage.alt = templeData.templeName;
+  templeImage.loading = "lazy";
 
-  wrapper.appendChild(temName);
-  wrapper.appendChild(othertemData);
-  wrapper.appendChild(createImg);
+  wrapper.appendChild(templeName);
+  wrapper.appendChild(templeDetails);
+  wrapper.appendChild(templeImage);
+  return wrapper;
+}
 
-  container.appendChild(wrapper);
+// Function to filter temples
+function filterTemples(filterType) {
+  const filteredTemples = temples.filter((templeData) => {
+    switch (filterType) {
+      case "old":
+        return parseInt(templeData.dedicated.split(",")[0].trim()) <= 1900;
+      case "new":
+        return parseInt(templeData.dedicated.split(",")[0].trim()) > 2000;
+      case "large":
+        return templeData.area > 90000;
+      case "small":
+        return templeData.area < 10000;
+      default:
+        return true; // Home filter
+    }
+  });
+
+  return filteredTemples;
+}
+
+// Function to update container
+function updateContainer(filterType) {
+  container.innerHTML = "";
+  const filteredTemples = filterTemples(filterType);
+  filteredTemples.forEach((templeData) => {
+    container.appendChild(createTempleElement(templeData));
+  });
+}
+
+// Initialize container
+temples.forEach((templeData) => {
+  container.appendChild(createTempleElement(templeData));
 });
+
 // Append container to main element
 const main = document.querySelector("main");
 main.appendChild(container);
 
-
+// Add event listeners for filters
+document
+  .getElementById("old")
+  .addEventListener("click", () => updateContainer("old"));
+document
+  .getElementById("new")
+  .addEventListener("click", () => updateContainer("new"));
+document
+  .getElementById("large")
+  .addEventListener("click", () => updateContainer("large"));
+document
+  .getElementById("small")
+  .addEventListener("click", () => updateContainer("small"));
+document
+  .getElementById("home")
+  .addEventListener("click", () => updateContainer());
 
 // last modification date
 const currentYear = new Date().getFullYear();
@@ -137,26 +182,3 @@ openMenu.addEventListener("click", () => {
   getNavigation.classList.toggle("open");
   openMenu.classList.toggle("open");
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
