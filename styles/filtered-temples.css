@@ -87,9 +87,8 @@ body {
 }
 
 .container {
-  background-color: #f0f0f0;
   display: grid;
-  width: 90%;
+  width: 100%;
   font-family: var(--body-font);
   justify-content: center;
   align-items: center;
