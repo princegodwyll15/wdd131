@@ -81,6 +81,11 @@ header h1 {
   transition: ease 1s;
   display: block;
 }
+h2{
+  text-align: center;
+  margin: .5rem;
+  font-family: var(--header-font);
+}
 
 .container {
   background-color: #f0f0f0;
