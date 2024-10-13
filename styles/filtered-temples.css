@@ -86,19 +86,16 @@ header h1 {
   display: block;
 }
 
-main {
+.container {
+  background-color: #f0f0f0;
   display: grid;
-  width: 100%;
+  width: 90%;
   font-family: var(--body-font);
   justify-content: center;
   align-items: center;
   grid-template-columns: auto;
   grid-template-rows: repeat(8, auto);
   margin: 0 auto;
-}
-.filteredContainer {
-  display: none; /* Hide initially */
-  margin-top: 20px;
 }
 .wrapper img{
   height: auto;
@@ -126,7 +123,7 @@ main {
   }
   
 /* Footer styles */
-.footer {
+footer {
   width: 100%;
   font-family: var(--body-font-style);
   font-style: normal;
@@ -137,7 +134,7 @@ main {
   color: var(--text-color);
 }
 
-.footer p::before {
+footer #year::before {
   content: "©";
   font-size: 20px;
 }

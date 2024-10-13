@@ -72,7 +72,87 @@ const temples = [
     imageUrl:
       "https://churchofjesuschristtemples.org/assets/img/temples/detroit-michigan-temple/detroit-michigan-temple-45743-main.jpg",
   },
+
   // Add more temple objects here...
 ];
+
+//create a container for the elements to be created
+const container = document.createElement("div");
+container.classList.add("container");
+
+// Iterate through temple data
+temples.forEach((templeData) => {
+  //create a wrappeer the temple elements
+  const wrapper = document.createElement("div");
+  wrapper.classList.add("wrapper");
+
+  //create elements for templeName key in the array object data
+  const temName = document.createElement("h2");
+  temName.classList.add("templeName");
+  temName.textContent = templeData.templeName;
+
+  //create elements for other temples key in the array object data
+  const othertemData = document.createElement("p");
+  othertemData.classList.add("tempdata");
+  othertemData.innerHTML = `Temple Location: ${templeData.location} <br>
+                            Dedication:${templeData.dedicated} <br>
+                            Land Size: ${templeData.area}`;
+
+  //create an img element to append temple images to it
+  const createImg = document.createElement("img");
+  createImg.classList.add('img');
+  createImg.src = templeData.imageUrl;
+  createImg.alt = templeData.templeName;
+  createImg.loading= "lazy";
+
+  wrapper.appendChild(temName);
+  wrapper.appendChild(othertemData);
+  wrapper.appendChild(createImg);
+
+  container.appendChild(wrapper);
+});
+document.body.appendChild(container);
+
+
+// last modification date
+const currentYear = new Date().getFullYear();
+const footerMsg = document.querySelector("#year");
+
+footerMsg.textContent = `${currentYear} Prince Godwyll Accra Ghana.`;
+ModifiedElement = document.getElementById("lastModification");
+const getLastModified = new Date(document.lastModified);
+actDate = getLastModified.toLocaleString();
+
+ModifiedElement.textContent = `Last updated: ${actDate}`;
+
+//hamburger on small screens
+const getNavigation = document.querySelector(".navigation");
+const openMenu = document.querySelector("#menu");
+
+openMenu.addEventListener("click", () => {
+  getNavigation.classList.toggle("open");
+  openMenu.classList.toggle("open");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
