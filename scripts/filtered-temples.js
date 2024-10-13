@@ -111,8 +111,100 @@ temples.forEach((templeData) => {
 
   container.appendChild(wrapper);
 });
-
 document.body.appendChild(container);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//filter elements for links
+const oldTemples =temples.filter((templeData) =>{
+const dedicatedYear = new Date(templeData.dedicated).getFullYear();
+return dedicatedYear < 1900;
+});
+
+oldTemples.forEach((templeData) =>{
+  //create a container for filtered temple data
+  const filteredContainer = document.createElement('div');
+  filteredContainer.classList.add('filteredContainer');
+
+
+  //wrapper to contain all img cards of temples
+  const wrapper = document.createElement("div");
+  wrapper.classList.add("wrapper");
+
+  //create elements for templeName key in the array object data
+  const temName = document.createElement("h2");
+  temName.classList.add("templeName");
+  temName.textContent = templeData.templeName;
+
+  const othertemData = document.createElement("p");
+  othertemData.classList.add("tempdata");
+  othertemData.innerHTML = `Temple Location: ${templeData.location} <br>
+                            Dedication:${templeData.dedicated} <br>
+                            Land Size: ${templeData.area}`;
+
+  //create an img element to append temple images to it
+  const createImg = document.createElement("img");
+  createImg.classList.add('img');
+  createImg.src = templeData.imageUrl;
+  createImg.alt = templeData.templeName;
+  createImg.loading= "lazy";
+
+  wrapper.appendChild(temName);
+  wrapper.appendChild(othertemData);
+  wrapper.appendChild(createImg);
+  filteredContainer.appendChild(wrapper);
+})
+
+document.body.appendChild(filteredContainer);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Create footer element
