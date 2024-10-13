@@ -1,3 +1,12 @@
+//create a container for the elements to be created
+const container = document.createElement("div");
+container.classList.add("container");
+
+//hamburger on small screens
+const getNavigation = document.querySelector(".navigation");
+const openMenu = document.querySelector("#menu");
+
+
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -76,9 +85,6 @@ const temples = [
   // Add more temple objects here...
 ];
 
-//create a container for the elements to be created
-const container = document.createElement("div");
-container.classList.add("container");
 
 // Iterate through temple data
 temples.forEach((templeData) => {
@@ -136,16 +142,11 @@ const footerContent = () => {
 // Call footerContent on page load
 document.addEventListener("DOMContentLoaded", footerContent);
 
-//hamburger on small screens
-const getNavigation = document.querySelector(".navigation");
-const openMenu = document.querySelector("#menu");
-
+//hamburger reponse code
 openMenu.addEventListener("click", () => {
   getNavigation.classList.toggle("open");
   openMenu.classList.toggle("open");
 });
-
-
 
 
 //filter elements for links
@@ -186,7 +187,6 @@ oldTemples.forEach((templeData) => {
   wrapper.appendChild(createImg);
   filteredContainer.appendChild(wrapper);
 });
-
 document.body.appendChild(filteredContainer);
 
 
