@@ -2,11 +2,8 @@ const input = document.getElementById("favchap");
 const button = document.querySelector("button");
 const list = document.getElementById("list");
 
-const li = document.createElement("li");
-const deleteButton = document.createElement("button");
-
 button.addEventListener("click", ()=> {
-  if (input.value.trim() != " ") {
+  if (input.value.trim() != "") {
     displayList(input.value);
     chaptersArray.push(input.value);
     setChapterList();
@@ -41,6 +38,7 @@ function getChapterList(){
 
 chapter = chapter.slice(0, chapter.length -1);
 chaptersArray = chaptersArray.filter((item) => item !== chapter);
+
 function deleteChapter(chapter){
   chapter = chapter.slice(0, chapter.length - 1);
   chaptersArray=chaptersArray.filter(item => item !==chapter);
