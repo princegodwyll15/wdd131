@@ -2,54 +2,51 @@ const input = document.getElementById("favchap");
 const button = document.querySelector("button");
 const list = document.getElementById("list");
 
-
-// The array declaration initializes the chaptersArray variable with the list of chapters returned by the getChapterList() function or an empty array if the function call returns null or undefined.
 let chaptersArray = getChapterList() || [];
 
-
-button.addEventListener("click", ()=> {
+button.addEventListener("click", () => {
   if (input.value.trim() != "") {
-    displayList(input.value);
-    chaptersArray.push(input.value);
+    const chapterName = input.value.trim();
+    displayList(chapterName);
+    chaptersArray.push(chapterName);
     setChapterList();
-    input.value='';
+    input.value = '';
     input.focus();
   }
 });
 
-function displayList(item){
-  let li =document.createElement('li');
+function displayList(item) {
+  let li = document.createElement('li');
   let deleteButton = document.createElement('button');
-  li.textContent= item;
-  deleteButton.textContent= "❌";
+  li.textContent = item;
+  deleteButton.textContent = "❌";
   deleteButton.classList.add('delete');
   li.append(deleteButton);
   list.append(li);
-  deleteButton.addEventListener('click', function(){
+
+  deleteButton.addEventListener('click', function() {
     list.removeChild(li);
-    deleteChapter(li.textContent);
+    deleteChapter(item);
     input.focus();
   });
-  console.log('I like to copy code instead of typing it out myself and trying to understand it.');
 }
 
-function setChapterList(){
+function setChapterList() {
   localStorage.setItem('myFavBomList', JSON.stringify(chaptersArray));
 }
 
-function getChapterList(){
-  return JSON.parse(localStorage.getItem('myFavBomList'));
+function getChapterList() {
+  return JSON.parse(localStorage.getItem('myFavBomList')) || [];
 }
 
-chapter = chapter.slice(0, chapter.length -1);
-chaptersArray = chaptersArray.filter((item) => item !== chapter);
-
-function deleteChapter(chapter){
-  chapter = chapter.slice(0, chapter.length - 1);
-  chaptersArray=chaptersArray.filter(item => item !==chapter);
+function deleteChapter(chapterName) {
+  chaptersArray = chaptersArray.filter(item => item !== chapterName);
   setChapterList();
 }
 
+// Initialize list with saved chapters
 chaptersArray.forEach(chapter => {
   displayList(chapter);
 });
+
+
