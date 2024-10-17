@@ -2,6 +2,11 @@ const input = document.getElementById("favchap");
 const button = document.querySelector("button");
 const list = document.getElementById("list");
 
+
+// The array declaration initializes the chaptersArray variable with the list of chapters returned by the getChapterList() function or an empty array if the function call returns null or undefined.
+let chaptersArray = getChapterList() || [];
+
+
 button.addEventListener("click", ()=> {
   if (input.value.trim() != "") {
     displayList(input.value);
@@ -44,8 +49,6 @@ function deleteChapter(chapter){
   chaptersArray=chaptersArray.filter(item => item !==chapter);
   setChapterList();
 }
-// The array declaration initializes the chaptersArray variable with the list of chapters returned by the getChapterList() function or an empty array if the function call returns null or undefined.
-let chaptersArray = getChapterList() || [];
 
 chaptersArray.forEach(chapter => {
   displayList(chapter);
