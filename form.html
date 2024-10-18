@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/forms.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+            <form method="get" action="review.html" class="p-review">
+                <!-- select input field  -->
+                <label>Product Name</label>
+                <select name="product-name" id="product-name" required>
+                    <option value="select a Prduct" >Select a product</option>
+                    <option value="Motor Tires">Motor Tires</option>
+                    <option value="Motor Tires">Motor Tires</option>
+                    <option value="Motor Tires">Motor Tires</option>
+                    <option value="Motor Tires">Motor Tires</option>
+                </select>
+                
+                <!-- radio button inputs -->
+                <div class="radio">
+                <label for="rating">Overall Rating</label>
+                <label for="level-1">&star;<input type="radio" name="rating" required></label>
+                <label for="level-2">&star;&star;<input type="radio" name="rating" required></label>
+                <label for="level-3">&star;&star;&star;<input type="radio" name="rating" required></label>
+                <label for="level-4">&star;&star;&star;&star;<input type="radio" name="rating" required></label>
+                <label for="level-5">&star;&star;&star;&star;&star;<input type="radio" name="rating" required></label>
+                </div>
+
+                <!-- date-of-installatiion -->
+                <label for="date-of-installation">Date od Installation <input type="date" id="date" name="date-of-installation" required></label>
+
+                <!-- checkbox inputs -->
+                <div class="checkbox">
+                    <label for="useful-features">Which features did you find useful in the product?</label>
+                    <label>(Check all that apply)</label>
+                    <label for="durabilty"><input type="checkbox" id="durabilty" value="durabilty">Durabilty</label>
+                    <label for="ease-of-use"><input type="checkbox" id="ease-of-use" value="ease of use">Ease Of Use</label>
+                    <label for="performance"><input type="checkbox" id="performance" value="performance">Performance</label>
+                    <label for="design"><input type="checkbox" id="design" value="design">Design</label>
+                </div>
+
+                <!-- written-review input  -->
+                <label for="written-review">Written Review (Optional)</label>
+                <textarea name="written-review" id="written-review"></textarea>
+                <!-- username input section -->
+                <label for="username">Your Name (Optional) <input type="text" name="username" id="username"></label>
+                <!-- submit button -->
+                <input type="submit" id="submit" name="submit" value="Post Review">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p id="year"></p>
+        <p id="lastModification"></p>
+    </footer>
+
+    <script src="scripts/forms.js" defer="defer"></script>
+</body>
+</html>
