@@ -152,6 +152,6 @@ main {
 
 @media screen and (max-width:768px) {
   .radio input[type="radio"]{
-  margin-right: 45%;
+  margin-right: 55%;
 }
 }
