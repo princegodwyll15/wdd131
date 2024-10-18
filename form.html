@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review</title>
     <link rel="stylesheet" href="styles/forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <header>
@@ -13,18 +22,20 @@
     <main>
             <form method="get" action="review.html" class="p-review">
                 <!-- select input field  -->
-                <label>Product Name</label>
+            <div class="select-container">
+                <label>Product Name*</label>
                 <select name="product-name" id="product-name" required>
-                    <option value="select a Prduct" >Select a product</option>
-                    <option value="Motor Tires">Motor Tires</option>
+                    <option value="select a Prduct">Select a product</option>
+                    <option value="Motor Tires" >Motor Tires</option>
                     <option value="Motor Tires">Motor Tires</option>
                     <option value="Motor Tires">Motor Tires</option>
                     <option value="Motor Tires">Motor Tires</option>
                 </select>
+            </div>
                 
                 <!-- radio button inputs -->
                 <div class="radio">
-                <label for="rating">Overall Rating</label>
+                <label for="rating">Overall Rating*</label>
                 <label for="level-1">&star;<input type="radio" name="rating" required></label>
                 <label for="level-2">&star;&star;<input type="radio" name="rating" required></label>
                 <label for="level-3">&star;&star;&star;<input type="radio" name="rating" required></label>
@@ -33,7 +44,7 @@
                 </div>
 
                 <!-- date-of-installatiion -->
-                <label for="date-of-installation">Date od Installation <input type="date" id="date" name="date-of-installation" required></label>
+                <label for="date-of-installation">Date od Installation* <input type="date" id="date" name="date-of-installation" required></label>
 
                 <!-- checkbox inputs -->
                 <div class="checkbox">
@@ -46,10 +57,10 @@
                 </div>
 
                 <!-- written-review input  -->
-                <label for="written-review">Written Review (Optional)</label>
+                <label for="written-review">Written Review <span>(Optional)</span></label>
                 <textarea name="written-review" id="written-review"></textarea>
                 <!-- username input section -->
-                <label for="username">Your Name (Optional) <input type="text" name="username" id="username"></label>
+                <label for="username">Your Name <span>(Optional)</span> <input type="text" name="username" id="username"></label>
                 <!-- submit button -->
                 <input type="submit" id="submit" name="submit" value="Post Review">
             </form>
