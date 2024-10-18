@@ -31,7 +31,6 @@ const getSelect = document.querySelector('#select-product');
 
 if (getSelect) {
   const assignOption = () => {
-    getSelect.innerHTML = ''; // Clear existing options
     products.forEach((productList) => {
       const productOption = new Option(productList.name, productList.id);
       getSelect.append(productOption);
