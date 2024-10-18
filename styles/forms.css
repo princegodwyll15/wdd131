@@ -64,6 +64,7 @@ main {
 .radio input[type="radio"]{
   margin-right: 75%;
 }
+
 /* style of radio inputs ends here */
 
 /* style the select element */
@@ -151,6 +152,6 @@ main {
 
 @media screen and (max-width:768px) {
   .radio input[type="radio"]{
-  margin-right: 52%;
+  margin-right: 45%;
 }
 }

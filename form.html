@@ -19,18 +19,19 @@
     <header>
         <h1>Product Review</h1>
     </header>
+
     <main>
-            <form method="get" action="review.html" class="p-review">
-                <!-- select input field  -->
+        <form method="get" action="review.html" class="p-review">
+            <!-- select input field  -->
             <div class="select-container">
                 <label>Product Name*</label>
-                <select name="product-name" id="product-name" required>
-                    <option value="select a Prduct">Select a product</option>
+                <select name="product-name" id="product-name" required id="select-product">
+                <option value="select a Prduct">Select a product</option>
                 </select>
             </div>
                 
-                <!-- radio button inputs -->
-                <div class="radio">
+            <!-- radio button inputs -->
+            <div class="radio">
                 <label for="rating">Overall Rating*</label>
                 <label for="level-1">&star;</label>
                 <label for="level-2">&star;&star;</label>
@@ -42,20 +43,20 @@
                 <input type="radio" name="rating" required>
                 <input type="radio" name="rating" required>
                 <input type="radio" name="rating" required>
-                </div>
+            </div>
 
-                <!-- date-of-installatiion -->
+            <!-- date-of-installatiion -->
                 <label for="date-of-installation">Date of Installation* <input type="date" id="date" name="date-of-installation" required></label>
 
                 <!-- checkbox inputs -->
-                <div class="checkbox">
-                    <label for="useful-features">Which features did you find useful in the product?</label>
-                    <label>(Check all that apply)</label>
-                    <label for="durabilty"><input type="checkbox" id="durabilty" value="durabilty">Durabilty</label>
-                    <label for="ease-of-use"><input type="checkbox" id="ease-of-use" value="ease of use">Ease Of Use</label>
-                    <label for="performance"><input type="checkbox" id="performance" value="performance">Performance</label>
-                    <label for="design"><input type="checkbox" id="design" value="design">Design</label>
-                </div>
+            <div class="checkbox">
+                <label for="useful-features">Which features did you find useful in the product?</label>
+                <label>(Check all that apply)</label>
+                <label for="durabilty"><input type="checkbox" id="durabilty" value="durabilty">Durabilty</label>
+                <label for="ease-of-use"><input type="checkbox" id="ease-of-use" value="ease of use">Ease Of Use</label>
+                <label for="performance"><input type="checkbox" id="performance" value="performance">Performance</label>
+                <label for="design"><input type="checkbox" id="design" value="design">Design</label>
+            </div>
 
                 <!-- written-review input  -->
                 <label for="written-review">Written Review <span>(Optional)</span></label>

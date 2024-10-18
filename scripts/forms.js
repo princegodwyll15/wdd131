@@ -26,11 +26,14 @@ const products = [
     }
   ];
 
+//get the select html element using the dom module
+const getSelect = document.querySelector('#select-product');
 
-
+// get all reqiured variables to populate the footer data
   const newYear = document.querySelector("#year");
   const lastModified = document.querySelector("#lastModification");
 
+  // declare a new date
   const year = new Date();
   const currentYear = year.getFullYear();
   newYear.textContent = `${currentYear} Prince Godwyll Ghana, Accra.`;
