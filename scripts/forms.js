@@ -29,6 +29,18 @@ const products = [
 //get the select html element using the dom module
 const getSelect = document.querySelector('#select-product');
 
+if (getSelect) {
+  const assignOption = () => {
+    getSelect.innerHTML = ''; // Clear existing options
+    products.forEach((productList) => {
+      const productOption = new Option(productList.name, productList.id);
+      getSelect.append(productOption);
+    });
+  };
+
+  assignOption(); // Call the function to populate options
+}
+
 // get all reqiured variables to populate the footer data
   const newYear = document.querySelector("#year");
   const lastModified = document.querySelector("#lastModification");
