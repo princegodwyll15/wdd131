@@ -162,7 +162,7 @@ footer{
 
 
 @media screen and (max-width:768px) {
-  .radio input[type="radio"], .radio label{
+  .radio input[type="radio"]{
   margin-right: 50%;
 }
 }
