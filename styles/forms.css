@@ -163,6 +163,6 @@ footer{
 
 @media screen and (max-width:768px) {
   .radio input[type="radio"]{
-  margin-right: 50%;
+  margin-left: 50%;
 }
 }
