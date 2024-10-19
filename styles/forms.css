@@ -1,8 +1,7 @@
 :root {
-  --background-color:  #ddd;
-  --input-background-color: #c7c6c6;
-  --general-text-color: #000;
-  --header-background: #8d8d8f;
+  --background-color:  rgb(189, 198, 247);
+  --input-background-color: #eee;
+  --header-background: rgb(107, 107, 255);
   --header-font: "Roboto", sans-serif;
   --label-font: "Afacad Flux", sans-serif;
 }
@@ -14,6 +13,7 @@
 }
 header,
 footer {
+  color: #eee;
   background-color: var(--header-background);
   width: 100%;
   font-family: var(--header-font);
@@ -37,9 +37,11 @@ main {
 }
 
 .p-review span {
-  color: red;
   font-family: var(--header-font);
   font-weight: 400;
+}
+.p-review input,textarea,select{
+  background-color: var(--input-background-color);
 }
 
 .p-review .radio,
@@ -144,7 +146,7 @@ main {
   border-radius: 6px;
   width: 94%;
   font-family: var(--label-font);
-  background-color: #eee;
+  background-color: var(--input-background-color);
   color: #000;
   font-size: 17px;
   margin-left: 0.5rem;
@@ -157,12 +159,13 @@ main {
 }
 
 footer{
-  font-size: 20px;
+  font-size: 18px;
+  color: #eee;
 }
 
 
 @media screen and (max-width:768px) {
   .radio input[type="radio"], .radio label{
-  margin-right: 30%;
+  margin-right: 2.8rem;
 }
 }
