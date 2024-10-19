@@ -1,8 +1,8 @@
 :root {
   --background-color: #402e7a;
-  --input-background-color: #ddd;
+  --input-background-color: #c7c6c6;
   --general-text-color: #000;
-  --header-background: #091057;
+  --header-background: #4a4a4a;
   --header-font: "Roboto", sans-serif;
   --label-font: "Afacad Flux", sans-serif;
 }
@@ -34,13 +34,13 @@ main {
   border-radius: 6px;
   padding: 20px 0px 0px 0px;
   height: auto;
-  background-color: var(--background-color);
+  background-color: var(--input-background-color);
 }
 
 .p-review span {
-  color: aqua;
+  color: blue;
   font-family: var(--header-font);
-  font-weight: 900;
+  font-weight: 400;
 }
 
 .p-review .radio,
@@ -65,6 +65,12 @@ main {
   margin-right: 75%;
 }
 
+
+
+
+.checkbox label{
+  color: #fff;
+}
 /* style of radio inputs ends here */
 
 /* style the select element */
@@ -73,6 +79,7 @@ main {
   font-family: var(--body-font);
   border-radius: 6px;
   margin-left: 0.5rem;
+  font-size: 20px;
   height: 40px;
   width: 94%;
   max-width: 700px;
@@ -89,7 +96,7 @@ main {
 /*style genereal labels*/
 .p-review label {
   font-family: var(--label-font);
-  color: #fff;
+  color: #000;
   font-size: 16px;
   display: block;
   margin-left: 0.5rem;
@@ -109,6 +116,7 @@ main {
 
 .p-review input[type="date"] {
   display: block;
+  font-size: 20px;
   width: 96%;
   max-width: 700px;
 }
@@ -151,7 +159,7 @@ main {
 
 
 @media screen and (max-width:768px) {
-  .radio input[type="radio"]{
-  margin-right: 55%;
+  .radio input[type="radio"], .radio label{
+  margin-right: 30%;
 }
 }

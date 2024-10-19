@@ -1,0 +1,41 @@
+:root{
+    --primary-color: ;
+    --secondary-color: ;
+    --accent-color: ; 
+    --header-font: ;
+    --body-font: ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: darkblue;
+    color: #fff;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 768px;
+    text-align: center;
+}
+
+main{
+    box-shadow: 1px 1px 4px rgb(190, 189, 189);
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+.about-site p{
+    margin-bottom: 1.5rem;
+    font-size: 17px;
+}
+
+.about-site img{
+    width: 100%;
+    height: auto;
+}

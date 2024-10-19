@@ -41,6 +41,7 @@ const products = [
     console.error("Select element not found.");
   }
     
+
 // get all reqiured variables to populate the footer data
   const newYear = document.querySelector("#year");
   const lastModified = document.querySelector("#lastModification");
