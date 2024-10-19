@@ -1,8 +1,8 @@
 :root {
-  --background-color: #402e7a;
+  --background-color:  #ddd;
   --input-background-color: #c7c6c6;
   --general-text-color: #000;
-  --header-background: #4a4a4a;
+  --header-background: #8d8d8f;
   --header-font: "Roboto", sans-serif;
   --label-font: "Afacad Flux", sans-serif;
 }
@@ -17,7 +17,6 @@ footer {
   background-color: var(--header-background);
   width: 100%;
   font-family: var(--header-font);
-  color: #fff;
   min-width: 400px;
   padding: 1rem;
   margin: 0 auto;
@@ -34,11 +33,11 @@ main {
   border-radius: 6px;
   padding: 20px 0px 0px 0px;
   height: auto;
-  background-color: var(--input-background-color);
+  background-color: var(--background-color);
 }
 
 .p-review span {
-  color: blue;
+  color: red;
   font-family: var(--header-font);
   font-weight: 400;
 }
@@ -155,6 +154,10 @@ main {
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+footer{
+  font-size: 20px;
 }
 
 
