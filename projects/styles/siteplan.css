@@ -1,9 +1,11 @@
 :root{
-    --primary-color: ;
-    --secondary-color: ;
-    --accent-color: ; 
-    --header-font: ;
-    --body-font: ;
+    --primary-color: #3d9ceb;
+    --secondary-color: #fff;
+    --tertiary-color:#000;
+    --accent-color: #ff0000; 
+    --header-font: "Roboto", sans-serif;
+    --body-font: "Montserrat", sans-serif;
+  
 }
 *{
     margin: 0;
@@ -13,29 +15,49 @@
 
 
 header{
-    background-color: darkblue;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    font-family: var(--header-font);
     width: 100%;
     padding: 1rem;
     margin: 0 auto;
-    max-width: 768px;
     text-align: center;
 }
 
 main{
-    box-shadow: 1px 1px 4px rgb(190, 189, 189);
+    font-family: var(--body-font);
+    box-shadow: 1px 1px 15px rgb(236, 236, 236);
     width: 100%;
     padding: 1rem;
-    margin: 0 auto;
-    max-width: 768px;
+    margin: 2% auto;
+    max-width: 1025px;
+}
+.about-site h3{
+    font-family: var(--header-font);
+    font-size: 20px;
+    color: var(--primary-color);
 }
 
 .about-site p{
     margin-bottom: 1.5rem;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .about-site img{
     width: 100%;
     height: auto;
+}
+
+footer{
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--header-font);
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    width: 100%;
+    padding: 1rem; 
+}
+footer p{
+    font-weight: 500;
+    font-size: 22px;
 }
