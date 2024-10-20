@@ -27,7 +27,7 @@ const products = [
   ];
 
   
-  const selectElement = document.querySelector('#product-name');
+  const selectElement = document.querySelector('#select-product');
   
   if (selectElement) {
     const populateOptions = () => {
