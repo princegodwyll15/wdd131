@@ -63,7 +63,7 @@ main {
 }
 
 .radio input[type="radio"]{
-  margin-right: 50%;
+  margin-right: 100%;
 }
 
 .checkbox label{
