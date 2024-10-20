@@ -2,8 +2,7 @@
   --background-color:  rgb(189, 198, 247);
   --input-background-color: #eee;
   --header-background: rgb(107, 107, 255);
-  --header-font: "Roboto", sans-serif;
-  --label-font: "Afacad Flux", sans-serif;
+  --font: "Roboto", sans-serif;
 }
 
 * {
@@ -16,7 +15,7 @@ footer {
   color: #eee;
   background-color: var(--header-background);
   width: 100%;
-  font-family: var(--header-font);
+  font-family: var(--font);
   min-width: 400px;
   padding: 1rem;
   margin: 0 auto;
@@ -37,7 +36,7 @@ main {
 }
 
 .p-review span {
-  font-family: var(--header-font);
+  font-family: var(--font);
   font-weight: 400;
 }
 .p-review input,textarea,select{
@@ -84,7 +83,7 @@ main {
 /* style the select element */
 .p-review select {
   border: none;
-  font-family: var(--body-font);
+  font-family: var(--font);
   border-radius: 6px;
   margin-left: 0.5rem;
   font-size: 20px;
@@ -103,7 +102,7 @@ main {
 
 /*style genereal labels*/
 .p-review label {
-  font-family: var(--label-font);
+  font-family: var(--font);
   color: #000;
   font-size: 16px;
   display: block;
@@ -152,7 +151,7 @@ main {
   height: 40px;
   border-radius: 6px;
   width: 94%;
-  font-family: var(--label-font);
+  font-family: var(--font);
   background-color: var(--input-background-color);
   color: #000;
   font-size: 17px;
