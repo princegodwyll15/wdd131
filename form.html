@@ -34,37 +34,43 @@
                 
             <!-- radio button inputs -->
             <div class="radio">
-                <label for="rating">Overall Rating*</label>
-                <label for="level-1">&star;</label>
-                <label for="level-2">&star;&star;</label>
-                <label for="level-3">&star;&star;&star;</label>
-                <label for="level-4">&star;&star;&star;&star;</label>
-                <label for="level-5">&star;&star;&star;&star;&star;</label>
-                <input type="radio" name="rating" required>
-                <input type="radio" name="rating" required>
-                <input type="radio" name="rating" required>
-                <input type="radio" name="rating" required>
-                <input type="radio" name="rating" required>
+                <div class="radio-label1">
+                    <label>Overall Rating*</label>
+                </div>
+                <div class="radio-label">
+                    <label>&star;</label>
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&star;&star;</label>
+                    <label>&nbsp;&nbsp;&star;&star;&star;</label>
+                    <label>&star;&star;&star;&star;</label>
+                    <label>&star;&star;&star;&star;&star;</label>
+                </div>
+                <div class="radio-input">
+                    <input name="rating" type="radio" required>
+                    <input name="rating" type="radio" required>
+                    <input name="rating" type="radio" required>
+                    <input name="rating" type="radio" required>
+                    <input name="rating" type="radio" required>    
+                </div>
             </div>
 
             <!-- date-of-installatiion -->
-                <label for="date-of-installation">Date of Installation* <input type="date" id="date" name="date-of-installation" required></label>
+                <label>Date of Installation* <input type="date" id="date" name="date-of-installation" required></label>
 
                 <!-- checkbox inputs -->
             <div class="checkbox">
-                <label for="useful-features">Which features did you find useful in the product?</label>
+                <label>Which features did you find useful in the product?</label>
                 <label>(Check all that apply)</label>
-                <label for="durabilty"><input type="checkbox" id="durabilty" value="durabilty">Durabilty</label>
-                <label for="ease-of-use"><input type="checkbox" id="ease-of-use" value="ease of use">Ease Of Use</label>
-                <label for="performance"><input type="checkbox" id="performance" value="performance">Performance</label>
-                <label for="design"><input type="checkbox" id="design" value="design">Design</label>
+                <label><input type="checkbox" id="durabilty" value="durabilty">Durabilty</label>
+                <label><input type="checkbox" id="ease-of-use" value="ease of use">Ease Of Use</label>
+                <label><input type="checkbox" id="performance" value="performance">Performance</label>
+                <label><input type="checkbox" id="design" value="design">Design</label>
             </div>
 
                 <!-- written-review input  -->
-                <label for="written-review">Written Review <span>(Optional)</span></label>
+                <label>Written Review <span>(Optional)</span></label>
                 <textarea name="written-review" id="written-review"></textarea>
                 <!-- username input section -->
-                <label for="username">Your Name <span>(Optional)</span> <input type="text" name="username" id="username"></label>
+                <label>Your Name <span>(Optional)</span> <input type="text" name="username" id="username"></label>
                 <!-- submit button -->
                 <input type="submit" id="submit" name="submit" value="Post Review">
             </form>
