@@ -63,20 +63,11 @@ main {
   grid-column: 1/2;
 }
 
-.radio-label{
-  display: flex;
-  justify-content: space-evenly;
+.radio input[type="radio"]{
+  margin-right: 75%;
 }
 
-.radio-input{
-  display: flex;
-  justify-content: space-evenly;
-  }
 
-  .radio-input input{
-    margin-right: 4.5%;
-  }
-  
 
 
 .checkbox label{
@@ -124,6 +115,9 @@ main {
   max-width: 700px;
   outline: none;
 }
+.p-review input[type="radio"]{
+    margin-left: 0.5rem
+  }
 
 .p-review input[type="date"] {
   display: block;
@@ -175,7 +169,7 @@ footer{
 
 
 @media screen and (max-width:768px) {
-  .radio-input input{
-    margin-right: 6.5%;
-  }
+  .radio input[type="radio"], .radio label{
+  margin-right: 2.8rem;
+}
 }
