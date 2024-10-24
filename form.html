@@ -1,80 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Prince Godwyll">
-    <meta name="description" content="a form that post the review of clients on a particular product">
+    <meta
+      name="description"
+      content="a form that post the review of clients on a particular product">
 
     <title>Product Review</title>
     <link rel="stylesheet" href="styles/forms.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
     <header>
-    <h1>Product Review</h1>
+      <h1>Product Review</h1>
     </header>
 
     <main>
-        <form method="get" action="review.html" class="p-review">
-            <!-- select input field  -->
-                <label>Product Name*</label>
-                <select id="select-product" required>
-                    <option value="" disabled selected>Select a Product</option>
-                    <!-- Your dynamically generated options here -->
-                </select>
-                
-            <!-- radio button inputs -->
-            <div class="radio">
-                <div class="radio-label1">
-                    <label>Overall Rating*</label>
-                </div>
-                <div class="radio-label">
-                    <label>&star;</label>
-                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&star;&star;</label>
-                    <label>&nbsp;&nbsp;&star;&star;&star;</label>
-                    <label>&star;&star;&star;&star;</label>
-                    <label>&star;&star;&star;&star;&star;</label>
-                </div>
-                <div class="radio-input">
-                    <input name="rating" type="radio" required>
-                    <input name="rating" type="radio" required>
-                    <input name="rating" type="radio" required>
-                    <input name="rating" type="radio" required>
-                    <input name="rating" type="radio" required>    
-                </div>
-            </div>
+      <form method="get" action="review.html" class="p-review">
+        <!-- select input field  -->
+        <label>Product Name*</label>
+        <select id="select-product" required>
+          <option value="" disabled selected>Select a Product</option>
+          <!-- Your dynamically generated options here -->
+        </select>
 
-            <!-- date-of-installatiion -->
-                <label>Date of Installation* <input type="date" id="date" name="date-of-installation" required></label>
+        <!-- radio button inputs -->
+        <div class="radio">
+          <div class="radio-label1">
+            <label>Overall Rating*</label>
+          </div>
+          <div class="radio-label">
+            <label>&star;</label>
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&star;&star;</label>
+            <label>&nbsp;&nbsp;&star;&star;&star;</label>
+            <label>&star;&star;&star;&star;</label>
+            <label>&star;&star;&star;&star;&star;</label>
+          </div>
+          <div class="radio-input">
+            <input name="rating" type="radio" required />
+            <input name="rating" type="radio" required />
+            <input name="rating" type="radio" required />
+            <input name="rating" type="radio" required />
+            <input name="rating" type="radio" required />
+          </div>
+        </div>
 
-                <!-- checkbox inputs -->
-            <div class="checkbox">
-                <label>Which features did you find useful in the product?</label>
-                <label>(Check all that apply)</label>
-                <label><input type="checkbox" id="durabilty" value="durabilty">Durabilty</label>
-                <label><input type="checkbox" id="ease-of-use" value="ease of use">Ease Of Use</label>
-                <label><input type="checkbox" id="performance" value="performance">Performance</label>
-                <label><input type="checkbox" id="design" value="design">Design</label>
-            </div>
+        <!-- date-of-installatiion -->
+        <label
+          >Date of Installation*
+          <input type="date" id="date" name="date-of-installation" required
+        /></label>
 
-                <!-- written-review input  -->
-                <label>Written Review <span>(Optional)</span></label>
-                <textarea name="written-review" id="written-review"></textarea>
-                <!-- username input section -->
-                <label>Your Name <span>(Optional)</span> <input type="text" name="username" id="username"></label>
-                <!-- submit button -->
-                <input type="submit" id="submit" name="submit" value="Post Review">
-            </form>
+        <!-- checkbox inputs -->
+        <div class="checkbox">
+          <label>Which features did you find useful in the product?</label>
+          <label>(Check all that apply)</label>
+          <label
+            ><input
+              type="checkbox"
+              id="durabilty"
+              value="durabilty"
+            />Durabilty</label
+          >
+          <label
+            ><input type="checkbox" id="ease-of-use" value="ease of use" />Ease
+            Of Use</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="performance"
+              value="performance"
+            />Performance</label
+          >
+          <label
+            ><input type="checkbox" id="design" value="design" />Design</label
+          >
+        </div>
+
+        <!-- written-review input  -->
+        <label>Written Review <span>(Optional)</span></label>
+        <textarea name="written-review" id="written-review"></textarea>
+        <!-- username input section -->
+        <label
+          >Your Name <span>(Optional)</span>
+          <input type="text" name="username" id="username"
+        /></label>
+        <!-- submit button -->
+        <input type="submit" id="submit" name="submit" value="Post Review" />
+      </form>
     </main>
     <footer>
-        <p id="year"></p>
-        <p id="lastModification"></p>
+      <p id="year"></p>
+      <p id="lastModification"></p>
     </footer>
 
     <script src="scripts/forms.js" defer="defer"></script>
-</body>
+  </body>
 </html>
