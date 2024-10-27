@@ -1,72 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Prince Godwyll" />
-    <meta
-      name="description"
-      content="A portfolio website of myself trying to display my abilities and ideas as a developer to my audience"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prince's Portfolio</title>
-  </head>
-  <body>
-    <header>
-      <h1>Prince Godwyll<span>PG</span></h1>
-      <div class="nav-container">
-        <nav>
-          <a href="#">Portfolio</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <a href="#">projects</a>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Prince Godwyll" />
+  <meta name="description"
+    content="A portfolio website of myself trying to display my abilities and ideas as a developer to my audience" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/portfolio-large.css" />
+  <link rel="stylesheet" href="styles/portfolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <title>Prince's Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <h1>prince godwyll<span>PG</span></h1>
+    <!-- <button id="menu-small"></button> -->
+    <nav>
+      <a href="#">Portfolio</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">projects</a>
+    </nav>
+    <a href="a" id="me">contact me</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+      <p>
+        <span>Hi</span> <span>im Prince Godwyll</span>
+        <span>Fullstack Developer,</span> This site is to showcase my skills,
+        experience, and projects to potential employers, clients, and
+        collaborators. Again, it helps to demonstrates my expertise and
+        versatility as a developer, setting me apart from others in the
+        industry.Having a portfolio site as a developer also provides a
+        centralized platform to share your accomplishments, making it easier
+        to attract new opportunities and grow your network. Additionally,
+        maintaining a portfolio site will help me reflect on my progress,
+        identify areas for improvement, and refine my skills. <br>
+        <button>download resume</button>
+      </p>
+      <img src="images/my-img.jpg" alt="my image" />
+    </div>
+    </section>
+
+
+    <section class="contact">
+    <div class="main-info">
+      <h2>contact page</h2>
+      <h3>Get in touch</h3>
+      <p>
+        I'd love to hear from you! Whether you have a question, comment, or
+        just want to say hello, I'm all ears.
+      </p>
+      <h3>Contact Information</h3>
+      <ul>
+        <li>Email: [your email address]</li>
+        <li>Phone: [your phone number]</li>
+        <li>Address: [your address (optional)]</li>
+      </ul>
+      <ul>
+        <h3>Social Media:</h3>
+
+        <p>Stay connected with me on social media:</p>
+
+        <li>LinkedIn: [your LinkedIn profile URL]</li>
+        <li>Twitter: [your Twitter handle URL]</li>
+        <li>Instagram: [your Instagram handle URL]</li>
+        <li>Facebook: [your Facebook page URL]</li>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contact-me">
+      <h3>Send Message</h3>
+      <form action="submitted.html" method="get" class="contact-form">
+        <label>Name:<input type="text" placeholder="yournamee" required /></label>
+        <label>Email:<input type="text" placeholder="yournamee" required /></label>
+        <label>Phone number:<input type="text" placeholder="yournamee" /></label>
+        <label>Subject:<input type="text" placeholder="yournamee" required /></label>
+        <label>Message Subject:<textarea name="msg-subject" id="msg-subject" rows="4" cols="2"required></textarea>
+        </label>
+        <input type="submit" name="submit" value="Send Message" />
+      </form>
+    </div>
+    </section>
+
+    <article class="about-me">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. In sequi fugit
+      voluptatibus rem? Incidunt nam voluptatem provident rem laboriosam
+      sequi! Ratione obcaecati vel aliquam veritatis fugit, numquam vitae
+      ipsum voluptate?
+      <div class="about-site">
+        <i><a href="">Whatsapp</a></i>
+        <i><a href="">Whatsapp</a></i>
+        <i><a href="">Whatsapp</a></i>
+        <i><a href="">Whatsapp</a></i>
       </div>
-    </header>
-    <main class="main">
-      <section class="main-section">
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
-          voluptate, iusto tenetur exercitationem ipsa repudiandae sapiente
-          eaque nulla unde voluptatum. Soluta iusto doloribus dolorum fuga,
-          sapiente dolores suscipit temporibus similique.
-          <button>Download Resume</button>
-          <img src="images/image.jpg" alt="my image" />
-        </p>
-      </section>
+      <button>Read more</button>
+    </article>
+  </main>
+  <footer>
+    <p id="year"></p>
+    <p id="lastModification"></p>
+    <div class="about-site">
+      <i><a href="">Whatsapp</a></i>
+      <i><a href="">Whatsapp</a></i>
+      <i><a href="">Whatsapp</a></i>
+      <i><a href="">Whatsapp</a></i>
+    </div>
+  </footer>
+</body>
 
-      <aside class="main-aside">
-        <h2>Comtact Page</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, quas
-          accusamus, ad libero veritatis sequi ut quaerat architecto dignissimos
-          animi quis, dolorum alias rem exercitationem distinctio obcaecati
-          dolorem nisi quasi!
-        </p>
-        <div class="contact-form">
-          <form action="submitted.html" method="get">
-            <label><input type="text" placeholder="yournamee" /></label>
-            <label><input type="text" placeholder="yournamee" /></label>
-            <label><input type="text" placeholder="yournamee" /></label>
-            <label><input type="text" placeholder="yournamee" /></label>
-            <label><input type="text" placeholder="yournamee" /></label>
-            <label><input type="text" placeholder="yournamee" /></label>
-          </form>
-        </div>
-      </aside>
-
-      <article class="about-me">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In sequi fugit
-        voluptatibus rem? Incidunt nam voluptatem provident rem laboriosam
-        sequi! Ratione obcaecati vel aliquam veritatis fugit, numquam vitae
-        ipsum voluptate?
-        <div class="about-site">
-            <i><a href="">Whatsapp</a></i>
-            <i><a href="">Whatsapp</a></i>
-            <i><a href="">Whatsapp</a></i>
-            <i><a href="">Whatsapp</a></i>
-        </div>
-        <button>Read more</button>
-      </article>
-    </main>
-  </body>
 </html>
