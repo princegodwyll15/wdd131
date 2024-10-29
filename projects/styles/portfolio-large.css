@@ -1,0 +1,347 @@
+:root {
+  --primary-color: #3d9ceb;
+  --secondary-color: #fff;
+  --tertiary-color: #000;
+  --addtional-accent-color: #e5e5e5;
+  --logo-font: "Playwrite GB S", cursive;
+  --header-font: "Roboto", sans-serif;
+  --body-font: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* header design here */
+header {
+  border-bottom: 1px solid black;
+  z-index: 5;
+  position: fixed;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  background-color: var(--addtional-accent-color);
+  color: var(--tertiary-color);
+}
+header h1 {
+  font-weight: 400;
+  padding: 10px 10px;
+  font-variant: small-caps;
+  font-family: var(--header-font);
+  font-size: 40px;
+}
+
+header span {
+  font-size: 15px;
+  color: var(--accent-color);
+  font-family: var(--logo-font);
+}
+
+/* contact me button on the nav bar */
+#me {
+  height: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 1rem;
+  margin: .5rem;
+  font-size: 18px;
+  font-family: var(--header-font);
+  border-radius: 6px;
+  transition: background ease-in 0.2s;
+}
+
+#me:hover {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+/* main navigation */
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+nav a {
+  font-size: clamp(16px, 4vw, 20px);
+  padding: 0 0.5rem;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  text-decoration: none;
+  color: #000;
+  font-family: var(--header-font);
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+/* #menu-small::before{
+    content: "☰";
+} */
+
+/* hero section */
+.hero {
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: 50% cover 50%;
+  border-bottom: 1px solid black;
+  background-position: center;
+  background-color: var(--tertiary-color);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--secondary-color);
+}
+.hero-content {
+  width: 99%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero-content p {
+  font-size: clamp(12px, 4vw,20px);
+  font-family: var(--body-font);
+  padding: 0.75rem;
+}
+.hero-content p > span {
+  font-size: 40px;
+  color: var(--primary-color);
+  display: block;
+  font-family: var(--header-font);
+}
+.hero-content button {
+  width: auto;
+  font-size: clamp(12px, 4vw, 15px);
+  font-variant: small-caps;
+  border-radius: 6px;
+  padding: .5rem;
+  opacity: 0.9;
+  font-family: var(--header-font);
+  margin-top: 2%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  outline: none;
+  transition: opacity ease 0.3s;
+}
+
+.hero-content button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.hero img {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+}
+
+/* contact section */
+.contact {
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: 10% cover 50%;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--addtional-accent-color);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: auto 50%;
+  grid-template-rows: auto;
+  object-fit: contain;
+  color: var(--tertiary-color);
+}
+/* contact me main  imfo this contains all contact means of me */
+.main-info {
+  padding: 1rem;
+  width: 100%;
+}
+.main-info h2 {
+  font-size: 25px;
+  font-variant: small-caps;
+  font-family: var(--logo-font);
+  color: var(--tertiary-color);
+  font-family: var(--header-font);
+}
+.main-info h3 {
+  margin-top: 5%;
+  font-variant: small-caps;
+  font-family: var(--logo-font);
+  color: var(--tertiary-color);
+  font-size: 15px;
+  font-family: var(--header-font);
+}
+.main-info li {
+  list-style: none;
+  font-size: 17px;
+}
+
+/* the form section of the contact me page */
+.contact-me {
+  padding: .5rem;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+}
+.contact-me h3 {
+  padding: .5rem;
+  font-weight: 500;
+  font-variant: small-caps;
+  font-family: var(--logo-font);
+  color: var(--tertiary-color);
+  font-size: 20px;
+  font-family: var(--header-font);
+}
+.contact-me label {
+  display: block;
+  margin: 2%;
+  color: var(--tertiary-color);
+  font-weight: 500;
+  font-family: var(--header-font);
+}
+.contact-me input,
+textarea {
+  opacity: 0.7;
+  margin-top: 0.5rem;
+  outline: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  max-width: 700px;
+  border: none;
+  display: block;
+  width: 100%;
+  resize: none;
+  transition: opacity ease 0.3s;
+}
+
+input:focus {
+  opacity: 1;
+}
+.contact-me input[type="submit"] {
+  width: 100%;
+  font-size: 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin-top: 4%;
+  transition: opacity ease 0.3s;
+}
+
+.contact-me input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.contact a {
+  color: var(--primary-color);
+  font-weight: var(--logo-font);
+}
+
+/* about me */
+.about-me{
+  position: relative; 
+  width: 98%;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  height: 70vh;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  display: grid;
+  width: 100%;
+  margin: auto; 
+}
+.about-me h2{
+  grid-column: 1/4;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 1rem;
+  font-variant: small-caps;
+  font-family: var(--header-font);
+}
+.about-content{
+  padding: 1rem;
+}
+
+.about-content li{
+  margin: .2rem;
+}
+.about-content a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.about-content p{
+  font-family: var(--body-font);
+}
+.about-content h3{
+  font-weight: 400;
+  font-variant: small-caps;
+  color: var(--primary-color);
+}
+
+.about-me img{
+  padding: 1rem;
+}
+
+/* footer section */
+footer {
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--addtional-accent-color);
+}
+.about-site {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+.about-site i {
+  width: 50px;
+  height: 50px;
+  /* background-color: #3d9ceb; */
+  margin: 0.2rem;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  padding: 1rem;
+  transition: transform ease 0.3s;
+  cursor: pointer;
+}
+
+.about-site i:hover {
+  transform: translateY(-10%);
+  background-color: var(--tertiary-color);
+  color: var(--addtional-accent-color);
+}
+
+footer p {
+  font-size: 18px;
+  font-family: var(--body-font);
+}
+
+
+@keyframes fade {
+  from{
+    opacity: .4;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}

@@ -2,40 +2,40 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="author" content="Prince Godwyll" />
+  <meta charset="UTF-8">
+  <meta name="author" content="Prince Godwyll">
   <meta name="description"
-    content="A portfolio website of myself trying to display my abilities and ideas as a developer to my audience" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/portfolio-large.css" />
-  <link rel="stylesheet" href="styles/portfolio.css" />
-  <link rel="stylesheet" href="styles/all.css">
+    content="A portfolio website of myself trying to display my abilities and ideas as a developer to my audience">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/portfolio-large.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="styles/all.min.css">
   <link rel="stylesheet" href="styles/fontawesome.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
     rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet">
 
   <title>Prince's Portfolio</title>
 </head>
 
 <body>
   <header>
-    <h1>prince godwyll<span>PG</span></h1>
-    <!-- <button id="menu-small"></button> -->
+    <h1>princegodwyll<span>pg</span></h1> 
+    <div id="menu-small"></div>
     <nav>
       <a href="#">Portfolio</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
       <a href="#">projects</a>
     </nav>
-    <a href="a" id="me">contact me</a>
+    <a href="#" id="me">contact me</a>
   </header>
 
   <main>
@@ -54,7 +54,7 @@
           identify areas for improvement, and refine my skills. <br>
           <button>download resume</button>
         </p>
-        <img src="images/my-img.jpg" alt="my image" />
+        <img src="images/my-img.jpg" alt="my image">
       </div>
     </section>
 
@@ -64,8 +64,7 @@
         <h2>contact page</h2>
         <h3>Get in touch</h3>
         <p>
-          I'd love to hear from you! Whether you have a question, comment, or
-          just want to say hello, I'm all ears.
+          I'd love to hear from you! Have a question? I'm all ears.
         </p>
         <h3>Contact Information</h3>
         <ul>
@@ -89,68 +88,68 @@
       <div class="contact-me">
         <h3>Send Message</h3>
         <form action="submitted.html" method="get" class="contact-form">
-          <label>Name:<input type="text" placeholder="fullname" required /></label>
-          <label>Email:<input type="email" placeholder="email here please" required /></label>
-          <label>Phone number:<input type="tel" placeholder="phone number here" /></label>
-          <label>Subject:<input type="text" placeholder="your subject of your message here" required /></label>
+          <label>Name:<input type="text" placeholder="fullname" required></label>
+          <label>Email:<input type="email" placeholder="email here please" required></label>
+          <label>Phone number:<input type="tel" placeholder="phone number here"></label>
+          <label>Subject:<input type="text" placeholder="your subject of your message here" required></label>
           <label>Message Subject:<textarea name="msg-subject" id="msg-subject" rows="4" cols="2" required></textarea>
           </label>
-          <input type="submit" name="submit" value="Send Message" />
+          <input type="submit" name="submit" value="Send Message">
         </form>
       </div>
     </section>
 
-    <article class="about-me">
-      <div class="about-content">
-      <p>As a driven and innovative software developer, I craft cutting-edge solutions that bridge the gap between
-        technology and business. With a strong foundation in computer science and expertise in [programming
-        languages/technologies], I excel at building scalable, efficient, and user-centric applications. Passionate about
-        staying up-to-date with industry trends, I continuously refine my skills to deliver high-quality solutions. My
-        portfolio showcases a selection of my notable projects, demonstrating my ability to transform complex problems
-        into seamless user experiences. Let's collaborate to bring your vision to life.
-      </p>
+    <section class="about-me">
+      <h2>about me</h2>
+      <picture>
+        <source srcset="images/my-img.jpg" media="max-widht:1025px">
+        <source srcset="images/my-img.jpg" media="max-widht:678px">
+        <img src="images/my-img.jpg" alt="about-me image">
+      </picture>
+      <div class="about-content">  
+        <p>As a driven and innovative software developer, I craft cutting-edge solutions that bridge the gap between
+          technology and business. With a strong foundation in computer science and expertise in [programming
+          languages/technologies], I excel at building scalable, efficient, and user-centric applications. Passionate about
+          staying up-to-date with industry trends, I continuously refine my skills to deliver high-quality solutions. My
+          portfolio showcases a selection of my notable projects, demonstrating my ability to transform complex problems
+          into seamless user experiences. Let's collaborate to bring your vision to life. <span id="about-more">Read more</span>
+        </p>  
+        <h3>experience</h3>
+          <ul>
+            <li>Python - 3years</li>
+          </ul>
 
-      <h3>experience</h3>
-      <ul>
-        <li>Python - 3years</li>
-      </ul>
+        <h3>Projects</h3>
+          <ul>
+            <li>Shoping cart app</li>
+            <li><a href="">view more of my projects</a></li>
+        </ul>
 
-      <h3>Projects</h3>
-      <ul>
-        <li>Shoping cart app</li>
-        <li><a href="">view more of my projects</a></li>
-      </ul>
-
-      <ul>
-        <li>LinkedIn: <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
-        <li>Twitter: <a href="">Twitter</a></li>
-        <li>Instagram: <a href="">Instagram</a></li>
-        <li>Facebook: <a href="">Facebook</a></li>
-      </ul>
-      <button>Read more</button>
-    </div>
-
-    <div class="about-picture">
-    <picture>
-      <source srcset="images/about-me.avif" media="max-widht:1025px">
-      <source srcset="images/about-me.avif" media="max-widht:678px">
-      <img src="images/about-me.avif" alt="about-me image">
-    </picture>
-    </div>
-
-    </article>
-  </main>
+        <h3>social media</h3>
+        <ul>
+          <li>LinkedIn: <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
+          <li>Twitter: <a href="">Twitter</a></li>
+          <li>Instagram: <a href="">Instagram</a></li>
+          <li>Facebook: <a href="">Facebook</a></li>
+        </ul>
+      </div>
+    </section>
+</main>
 
   <footer>
+    <div class="about-site">
+      <i class="fab fa-facebook-f"><a href=""></a></i>
+      <i class="fa-brands fa-linkedin"><a href=""></a></i>
+      <i class="fa-brands fa-x-twitter"><a href=""></a></i>
+      <i class="fa-brands fa-instagram"><a href=""></a></i>
+      <i class="fa-brands fa-whatsapp"><a href=""></a></i>
+    </div>
+    
     <p id="year"></p>
     <p id="lastModification"></p>
-    <div class="about-site">
-      <i class="fa fa-whatsapp"><a href=""></a></i>
-      <i><a href="">Whatsapp</a></i>
-      <i><a href="">Whatsapp</a></i>
-      <i><a href="">Whatsapp</a></i>
-    </div>
-  </footer>
-</body>
 
+  </footer>
+  <script src="scripts/porfolio.js" defer='defer'></script>
+</body>
 </html>
+
