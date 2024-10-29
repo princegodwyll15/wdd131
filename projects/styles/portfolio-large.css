@@ -1,8 +1,8 @@
 :root {
   --primary-color: #3d9ceb;
-  --secondary-color: #fff;
-  --tertiary-color: #000;
-  --addtional-accent-color: #e5e5e5;
+  --secondary-color: #000;
+  --tertiary-color: #f5ffff;
+  --addtional-accent-color: #0089ba;
   --logo-font: "Playwrite GB S", cursive;
   --header-font: "Roboto", sans-serif;
   --body-font: "Montserrat", sans-serif;
@@ -16,7 +16,6 @@
 
 /* header design here */
 header {
-  border-bottom: 1px solid black;
   z-index: 5;
   position: fixed;
   justify-content: space-between;
@@ -47,9 +46,10 @@ header span {
   justify-content: center;
   align-self: center;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   text-decoration: none;
   padding: 1rem;
+  opacity: .9;
   margin: .5rem;
   font-size: 18px;
   font-family: var(--header-font);
@@ -58,23 +58,21 @@ header span {
 }
 
 #me:hover {
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
+  opacity: 1;
 }
 
 /* main navigation */
 nav {
   display: flex;
   align-items: center;
-  padding: 1rem;
 }
 nav a {
   font-size: clamp(16px, 4vw, 20px);
   padding: 0 0.5rem;
-  opacity: 0.7;
+  opacity: 0.9;
   transition: opacity 0.3s;
   text-decoration: none;
-  color: #000;
+  color: var(--tertiary-color);
   font-family: var(--header-font);
 }
 
@@ -82,16 +80,8 @@ nav a:hover {
   opacity: 1;
 }
 
-/* #menu-small::before{
-    content: "☰";
-} */
-
 /* hero section */
 .hero {
-  animation: fade linear both;
-  animation-timeline: view();
-  animation-range: 50% cover 50%;
-  border-bottom: 1px solid black;
   background-position: center;
   background-color: var(--tertiary-color);
   background-size: cover;
@@ -124,15 +114,15 @@ nav a:hover {
 }
 .hero-content button {
   width: auto;
-  font-size: clamp(12px, 4vw, 15px);
+  font-size: clamp(12px, 4vw, 17px);
   font-variant: small-caps;
   border-radius: 6px;
-  padding: .5rem;
+  padding: 1rem;
   opacity: 0.9;
   font-family: var(--header-font);
   margin-top: 2%;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   border: none;
   outline: none;
   transition: opacity ease 0.3s;
@@ -151,9 +141,6 @@ nav a:hover {
 
 /* contact section */
 .contact {
-  animation: fade linear both;
-  animation-timeline: view();
-  animation-range: 10% cover 50%;
   background-position: center;
   background-size: cover;
   background-color: var(--addtional-accent-color);
@@ -174,18 +161,19 @@ nav a:hover {
   width: 100%;
 }
 .main-info h2 {
-  font-size: 25px;
+  font-size: 30px;
+  margin-bottom: 70%;
+  font-weight: 400;
   font-variant: small-caps;
-  font-family: var(--logo-font);
   color: var(--tertiary-color);
   font-family: var(--header-font);
 }
 .main-info h3 {
-  margin-top: 5%;
+  margin-top: .5rem;
   font-variant: small-caps;
   font-family: var(--logo-font);
   color: var(--tertiary-color);
-  font-size: 15px;
+  font-size: 20px;
   font-family: var(--header-font);
 }
 .main-info li {
@@ -235,13 +223,12 @@ textarea {
 input:focus {
   opacity: 1;
 }
-.contact-me input[type="submit"] {
-  width: 100%;
-  font-size: 20px;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  margin-top: 4%;
-  transition: opacity ease 0.3s;
+textarea:focus {
+  opacity: 1;
+}
+
+textarea{
+  margin-bottom: 2%;
 }
 
 .contact-me input[type="submit"]:hover {
@@ -315,11 +302,10 @@ footer {
 .about-site i {
   width: 50px;
   height: 50px;
-  /* background-color: #3d9ceb; */
   margin: 0.2rem;
   border-radius: 50%;
-  font-size: 1.3rem;
-  padding: 1rem;
+  font-size: 1.5rem;
+  padding: .8rem;
   transition: transform ease 0.3s;
   cursor: pointer;
 }
@@ -338,10 +324,23 @@ footer p {
 
 @keyframes fade {
   from{
-    opacity: .4;
+    opacity: .1;
   }
   to{
     opacity: 1;
   }
   
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Change to your desired width */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--addtional-accent-color); /* Change to your desired color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eee; /* Change to your desired color */
 }
