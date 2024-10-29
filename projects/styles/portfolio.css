@@ -1,3 +1,4 @@
+/* for moblie devices */
 @media screen and (max-width: 768px) {
   header nav {
     display: none;
@@ -92,6 +93,13 @@
     display: none;
   }
 }
+
+
+
+
+
+
+
 
 
 /* tablets and small screen desktop */
@@ -207,13 +215,14 @@
   }
   
   .about-content{
-    padding: 1rem;
+    padding: .5rem;
   }
   
   .about-content h3{
     font-size: 20px;
   }
   .about-content li{
+    list-style: none;
     color: var(--tertiary-color);
     margin: .2rem;
   }
