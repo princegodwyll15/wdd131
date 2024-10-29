@@ -79,7 +79,21 @@
     padding: 0;
   }
 
-  /* footer section */  
+  /* footer section */
+  footer{
+    display: flex;
+    color: var(--primary-color);
+    font-size: 10px;
+    padding: 0;
+    background-color: var(--tertiary-color);
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-content{
+    display: none;
+  }
+  
+  
 }
 
 
@@ -155,7 +169,6 @@
     font-size: 17px;
   }
   .main-info li {
-    margin-left: 2%;
     font-size: 15px;
   }
   
