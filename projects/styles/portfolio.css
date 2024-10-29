@@ -2,6 +2,9 @@
   header nav {
     display: none;
   }
+  header h1 {
+    font-size: 30px;
+  }
 
   #me {
     display: none;
@@ -9,12 +12,12 @@
   #menu-small {
     display: flex;
     justify-content: center;
+    padding: 10px 10px;
     align-items: center;
     align-self: center;
   }
   #menu-small::before {
     content: "☰";
-    padding: 10px 10px;
   }
 
   .hero{
@@ -76,21 +79,7 @@
     padding: 0;
   }
 
-    /* footer section */
-    footer{
-      display: flex;
-      color: var(--primary-color);
-      font-size: 10px;
-      padding: 0;
-      background-color: var(--tertiary-color);
-      justify-content: space-between;
-      align-items: center;
-    }
-    .footer-content{
-      display: none;
-    }
-  
-  
+  /* footer section */  
 }
 
 
@@ -166,6 +155,7 @@
     font-size: 17px;
   }
   .main-info li {
+    margin-left: 2%;
     font-size: 15px;
   }
   
