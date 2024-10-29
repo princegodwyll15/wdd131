@@ -7,17 +7,35 @@ const mydetails = [
 ];
 
 
+//add hamburger for responsive nav bar
+function createHamburger(){
+const getHamburger = document.querySelector('#menu');
+const getNavigation = document.querySelector('.navigation');
+
+getHamburger.addEventListener('click', ()=>{
+  getHamburger.classList.toggle('open');
+  getNavigation.classList.toggle('open');
+})
+};
+window.onload(createHamburger());
+
+
+
+// function to add scroll to section
+const addscrollToSection = ()=>{
 //access all links in the header
 const navLinks = document.querySelectorAll('nav a');
-
 //loop thorugh all the links to add the smooth scrooll porperty to it
 navLinks.forEach((link) => {
-  link.addEventListener('click', (e) => {
+    link.addEventListener('click', (e) => {
     e.preventDefault();
     const targetSection = document.querySelector(link.getAttribute('href'));
     targetSection.scrollIntoView({ behavior: 'smooth' });
   });
-});
+})
+};
+window.onload(addscrollToSection());
+
 
 // populate the footer element
 const getYear = document.querySelector('#year');
