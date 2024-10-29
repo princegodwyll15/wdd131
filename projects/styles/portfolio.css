@@ -6,6 +6,13 @@
     align-items: center;
   }
   
+  .main-navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .navigation a {
     display: none;
   }
