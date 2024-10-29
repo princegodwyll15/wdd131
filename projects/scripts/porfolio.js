@@ -10,8 +10,7 @@ const mydetails = [
 //access all links in the header
 const navLinks = document.querySelectorAll('nav a');
 
-
-//loop thorugh all the links to add the smooth scrooll porperty yo it
+//loop thorugh all the links to add the smooth scrooll porperty to it
 navLinks.forEach((link) => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
@@ -19,10 +18,6 @@ navLinks.forEach((link) => {
     targetSection.scrollIntoView({ behavior: 'smooth' });
   });
 });
-
-
-
-
 
 // populate the footer element
 const getYear = document.querySelector('#year');

@@ -1,86 +1,3 @@
-@media screen and (max-width: 1025px) {
-  header nav {
-    display: none;
-  }
-
-  #me {
-    display: none;
-  }
-  #menu-small {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-  }
-  #menu-small::before {
-    content: "☰";
-    padding: 0.5rem;
-    font-size: 50px;
-  }
-
-  .hero{
-    height: auto;
-  }
-
-  .hero-content{
-    margin-top: 20%;
-    flex-direction: column;
-  }
-  .hero-content p>span{
-    font-size: 20px;
-  }
-  .hero-content img{
-    display: none;
-  }
-  .contact {
-    height: auto;
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: auto;
-    color: var(--tertiary-color);
-  }
-
-  .about-me{
-    grid-template-columns: auto;
-    height: auto;
-    grid-template-rows: auto auto;  
-  }
-
-  .about-me h2{
-    grid-column: 1/4;
-    font-size: 30px;
-    font-weight: 400;
-    padding: 1rem;
-    font-variant: small-caps;
-    font-family: var(--header-font);
-  }
-  .about-content{
-    padding: 1rem;
-  }
-  
-  .about-content li{
-    margin: .2rem;
-  }
-  .about-content a{
-    text-decoration: none;
-    color: var(--primary-color);
-  }
-  .about-content p{
-    font-family: var(--body-font);
-  }
-  .about-content h3{
-    font-weight: 400;
-    font-variant: small-caps;
-    color: var(--primary-color);
-  }
-  
-  .about-me img{
-    display: none;
-    padding: 0;
-  }
-  
-}
-
 @media screen and (max-width: 768px) {
   header nav {
     display: none;
@@ -97,7 +14,7 @@
   }
   #menu-small::before {
     content: "☰";
-    padding: 0.5rem;
+    padding: .5rem;
     font-size: 50px;
   }
 
@@ -146,7 +63,6 @@
   }
   .about-content a{
     text-decoration: none;
-    color: var(--primary-color);
   }
   .about-content p{
     font-family: var(--body-font);
@@ -154,12 +70,192 @@
   .about-content h3{
     font-weight: 400;
     font-variant: small-caps;
-    color: var(--primary-color);
   }
   
   .about-me img{
     display: none;
     padding: 0;
   }
+
+    /* footer section */
+    footer{
+      display: flex;
+      color: var(--primary-color);
+      font-size: 10px;
+      padding: 0;
+      background-color: var(--tertiary-color);
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-content{
+      display: none;
+    }
   
+  
+}
+
+
+/* tablets and small screen desktop */
+@media screen and (max-width:1025px) {
+  
+  header h1 {
+    font-weight: 400;
+    padding: .5rem auto;
+    font-variant: small-caps;
+    font-size: 25px;
+  }
+  
+  header span {
+    font-size: 13px;
+    color: var(--tertiary-color);
+  }
+  
+  /* contact me button on the nav bar */
+  #me {
+    padding: .5rem;
+    font-size: 20px;
+  }
+  
+  #me:hover {
+    opacity: 1;
+  }
+  
+  /* main navigation */
+  nav a {
+    font-size: 17px;
+    padding: 0.5rem;
+  }
+  
+  nav a:hover {
+    opacity: 1;
+  }
+  
+  /* hero section */
+  .hero-content p {
+    font-size: 15px;
+    padding: 0.75rem;
+  }
+  .hero-content p > span {
+    font-size: 22px;
+    color: var(--tertiary-color);
+    display: block;
+  }
+  .hero-content button {
+    width: auto;
+    font-size: 15px;
+    font-variant: small-caps;
+    border-radius: 6px;
+    padding: .5rem;
+  }
+    
+  .hero img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  /* contact me main  imfo this contains all contact means of me */
+  .main-info {
+    padding: .5rem;
+    width: 100%;
+  }
+  .main-info h2 {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .main-info h3 {
+    font-size: 17px;
+  }
+  .main-info li {
+    font-size: 15px;
+  }
+  
+  /* the form section of the contact me page */
+  .contact-me {
+    padding: .5rem;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    backdrop-filter: blur(10px);
+  }
+  .contact-me h3 {
+    padding: .5rem;
+    font-weight: 500;
+    font-variant: small-caps;
+    color: var(--primary-color);
+    font-size: 20px;
+  }
+    
+  /* about me */
+  .about-me{
+    position: relative; 
+    width: 98%;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    height: 100vh;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    display: grid;
+    width: 100%;
+    margin: auto; 
+  }
+  .about-me h2{
+    grid-column: 1/4;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 1rem;
+    font-variant: small-caps;
+  }
+  
+  .about-content{
+    padding: 1rem;
+  }
+  
+  .about-content h3{
+    font-size: 20px;
+  }
+  .about-content li{
+    color: var(--tertiary-color);
+    margin: .2rem;
+  }
+  .about-content a{
+    font-size: 18px;
+    color: var(--tertiary-color);
+    text-decoration: none;
+  }
+  .about-content h3{
+    margin-top: 1rem;
+    font-weight: 400;
+    font-variant: small-caps;
+  }
+  
+  .about-me img{
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* footer section */
+  footer{
+    display: flex;
+    color: var(--primary-color);
+    font-size: 15px;
+    padding: 1rem;
+    background-color: var(--tertiary-color);
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-icons i{
+    border-radius: 50%;
+    font-size: 12px;
+    padding: .5rem;
+  }
+  
+  .footer-nav a{
+    font-size: 15px;
+    text-decoration: underline;
+    padding: .2rem;
+  }
+    
 }
