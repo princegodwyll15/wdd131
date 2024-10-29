@@ -158,7 +158,7 @@ nav a:hover {
 /* contact me main  imfo this contains all contact means of me */
 .main-info {
   color: var(--primary-color);
-  padding: 1rem;
+  padding: .5rem;
   width: 100%;
 }
 .main-info h2 {
@@ -181,14 +181,13 @@ nav a:hover {
 
 /* the form section of the contact me page */
 .contact-me {
-  padding: .5rem;
   width: 100%;
   height: auto;
   border-radius: 6px;
   backdrop-filter: blur(10px);
 }
 .contact-me h3 {
-  padding: .5rem;
+  margin: 10px 0px 10px 0px;
   font-weight: 500;
   font-variant: small-caps;
   color: var(--primary-color);
@@ -196,7 +195,7 @@ nav a:hover {
 }
 .contact-me label {
   display: block;
-  margin: 2%;
+  margin-bottom: 2%;
   color: var(--primary-color);
   font-weight: 500;
 }
@@ -228,8 +227,9 @@ textarea{
 }
 
 input[type="submit"]{
-  margin: auto;
-  width: 96%;
+  margin-bottom: 10px;
+
+  width: 100%;
   opacity: .7;
   background-color: var(--primary-color);
   color: var(--tertiary-color);
