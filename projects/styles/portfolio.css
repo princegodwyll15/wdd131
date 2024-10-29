@@ -1,13 +1,23 @@
 /* for moblie devices */
 @media screen and (max-width: 768px) {
-  #me {
-    display: none;
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
+  
   .navigation a {
     display: none;
   }
-
+  
+  .navigation.open a {
+    display: block;
+  }
+  
+  #me {
+    display: none;
+  }
+  
   #menu {
     grid-column: 1/4;
     padding: 10px 10px;
@@ -16,18 +26,15 @@
     color: var(--text-color);
   }
 
-  #menu::before {
-    content: "☰";
-  }
-
   #menu.open::before {
     content: "X";
   }
-
-  .open a {
-    display: block;
+  
+  
+  #menu::before {
+    content: "☰";
   }
-
+    
   .hero {
     height: auto;
   }
