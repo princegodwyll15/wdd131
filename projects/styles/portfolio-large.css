@@ -256,7 +256,7 @@ input::placeholder{
   width: 98%;
   background-color: var(--primary-color);
   color: var(--tertiary-color);
-  height: 100vh;
+  height: auto;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   display: grid;
