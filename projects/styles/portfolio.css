@@ -20,6 +20,11 @@
   .navigation.open a {
     display: block;
   }
+
+  .navigation.open + .hero {
+    margin-top: 200px; /* adjust margin */
+  }
+    
   
   #me {
     display: none;
@@ -279,3 +284,15 @@
     padding: 0.2rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
