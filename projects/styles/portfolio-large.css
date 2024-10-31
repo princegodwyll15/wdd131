@@ -251,8 +251,8 @@ input::placeholder{
 .about-me{
   position: relative; 
   width: 98%;
-  background-color: var(--primary-color);
-  color: var(--tertiary-color);
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
   height: auto;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
@@ -276,13 +276,8 @@ input::placeholder{
   font-size: 20px;
 }
 .about-content li{
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   margin: .2rem;
-}
-.about-content a{
-  font-size: 18px;
-  color: var(--tertiary-color);
-  text-decoration: none;
 }
 .about-content h3{
   margin-top: 1rem;
@@ -299,10 +294,10 @@ input::placeholder{
 /* footer section */
 footer{
   display: flex;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
   font-size: 18px;
   padding: 1rem;
-  background-color: var(--tertiary-color);
+  background-color: var(--primary-color);
   justify-content: space-between;
   align-items: center;
 }
@@ -311,7 +306,6 @@ footer{
   border-radius: 50%;
   font-size: 20px;
   color: var(--tertiary-color);
-  background-color: var(--primary-color);
   transition: transform ease .3s;
   padding: 1rem;
 }
@@ -319,7 +313,7 @@ footer{
 .footer-nav a{
   font-size: 18px;
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
   padding: .5rem;
 }
 
