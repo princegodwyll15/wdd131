@@ -33,7 +33,7 @@ header {
 }
 header h1 {
   font-weight: 400;
-  padding: 10px 10px;
+  padding: .5rem;
   font-variant: small-caps;
   font-size: 40px;
 }
@@ -250,7 +250,7 @@ input::placeholder{
 /* about me */
 .about-me{
   position: relative; 
-  width: 98%;
+  width: 99%;
   background-color: var(--tertiary-color);
   color: var(--primary-color);
   height: auto;
@@ -264,12 +264,12 @@ input::placeholder{
   grid-column: 1/4;
   font-size: 25px;
   font-weight: 400;
-  padding: 1rem;
+  padding: .5rem;
   font-variant: small-caps;
 }
 
 .about-content{
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .about-content h3{
@@ -286,7 +286,7 @@ input::placeholder{
 }
 
 .about-me img{
-  padding: 1rem;
+  padding: .5rem;
   width: 100%;
   height: auto;
 }
