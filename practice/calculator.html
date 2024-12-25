@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Calculator</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+    }
+    .calculator {
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #868585;
+    }
+    .calculator button {
+      width: 100px;
+      height: 100px;
+      margin: .2rem;
+      border-radius: 50%;
+      opacity: 0.8;
+      border: none;
+      outline: none;
+      background-color: #171717;
+      color: #fff;
+      font-size: 25px;
+      padding: .5rem;
+    }
+    .calculator button:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+    .calculator .display {
+      background-color: #868585;
+      border-radius: 10px 10px 0px 0px;
+      margin: auto;
+      text-align: right;
+      font-size: 30px;
+      border-radius: 10px;
+      color: #fff;
+      width: 98%;
+      max-width: 420px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .calculator .display:hover {
+      opacity: 0;
+      cursor: none;
+    }
+    #calc {
+      background-color: orangered;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <button class="display"></button>
+      <div>
+        <button class="displayValue" onclick="ClearScreen()" id="calc">AC</button>
+        <button class="displayValue" onclick="ToggleSign()" id="calc">+/-</button>
+        <button class="displayValue" onclick="Percentage()" id="calc">%</button>
+        <button class="displayValue" onclick="DisplayValue('/')" id="calc">/</button>
+      </div>
+      <div>
+        <button class="displayValue" onclick="DisplayValue(7)">7</button>
+        <button class="displayValue" onclick="DisplayValue(8)">8</button>
+        <button class="displayValue" onclick="DisplayValue(9)">9</button>
+        <button class="displayValue" onclick="DisplayValue('*')" id="calc">*</button>
+      </div>
+      <div>
+        <button class="displayValue" onclick="DisplayValue(4)">4</button>
+        <button class="displayValue" onclick="DisplayValue(5)">5</button>
+        <button class="displayValue" onclick="DisplayValue(6)">6</button>
+        <button class="displayValue" onclick="DisplayValue('-')" id="calc">-</button>
+      </div>
+      <div>
+        <button class="displayValue" onclick="DisplayValue(1)">1</button>
+        <button class="displayValue" onclick="DisplayValue(2)">2</button>
+        <button class="displayValue" onclick="DisplayValue(3)">3</button>
+        <button class="displayValue" onclick="DisplayValue('+')" id="calc">+</button>
+      </div>
+      <div>
+        <button class="displayValue" onclick="DisplayValue(0)">0</button>
+        <button class="displayValue" onclick="DisplayValue('.')">.</button>
+        <button class="displayValue" onclick="Delete()">DEL</button>
+        <button class="displayValue" onclick="Calculate()" id="calc">=</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function Delete(){
+      const display = document.querySelector(".display");
+      display.innerText = display.innerText.slice(0, -1);
+    }
+    function DisplayValue(value) {
+      const display = document.querySelector(".display");
+      if (display.innerText.length < 23) { // Limit the number of characters to prevent overflow
+        display.innerText += value;
+      }
+    }
+
+    function ClearScreen() {
+      document.querySelector(".display").innerText = "";
+    }
+
+    function ToggleSign() {
+      const display = document.querySelector(".display");
+      if (display.innerText) {
+        display.innerText = display.innerText.charAt(0) === '-' ? display.innerText.slice(1) : '-' + display.innerText;
+      }
+    }
+
+    function Percentage() {
+      const display = document.querySelector(".display");
+      if (display.innerText) {
+        display.innerText = (parseFloat(display.innerText) / 100).toString();
+      }
+    }
+
+    function Calculate() {
+      const display = document.querySelector(".display");
+      try {
+        display.innerText = eval(display.innerText);
+      } catch {
+        display.innerText = "Error";
+      }
+    }
+  </script>
+</body>
+</html>
